@@ -86,7 +86,6 @@ pipeline {
 
                     echo "🐳 使用BuildKit构建镜像，上下文=仓库根目录，Dockerfile=apps/web/Dockerfile"
                     sh """
-                        export DOCKER_BUILDKIT=1
                         docker build \
                             -f apps/web/Dockerfile \
                             -t ${FULL_IMAGE_NAME} \
