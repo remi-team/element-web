@@ -16,7 +16,7 @@
     "branding": {
         "logo_link_url": "https://element.io",
         "auth_header_logo_url": "themes/remi/img/logos/remi-logo.svg",
-        "welcome_background_url": "themes/element/img/backgrounds/lake.jpg"
+        "welcome_background_url": "themes/element/img/backgrounds/welcome.jpg"
     },
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",

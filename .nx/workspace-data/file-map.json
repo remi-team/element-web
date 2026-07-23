@@ -49,6 +49,10 @@
         },
         {
           "file": "apps/web/Dockerfile",
+          "hash": "3591070854785232843"
+        },
+        {
+          "file": "apps/web/Dockerfile.bak",
           "hash": "6706642922156667120"
         },
         {
@@ -8796,7 +8800,7 @@
         },
         {
           "file": "apps/web/src/stores/ReadyWatchingStore.ts",
-          "hash": "14604652471361701057"
+          "hash": "11148783309017153228"
         },
         {
           "file": "apps/web/src/stores/ReleaseAnnouncementStore.ts",
@@ -8844,7 +8848,7 @@
         },
         {
           "file": "apps/web/src/stores/WidgetStore.ts",
-          "hash": "11615274673268321038"
+          "hash": "8747274538947151070"
         },
         {
           "file": "apps/web/src/stores/local-echo/EchoChamber.ts",
@@ -9192,7 +9196,7 @@
         },
         {
           "file": "apps/web/src/stores/widgets/WidgetMessagingStore.ts",
-          "hash": "1520096132101873863"
+          "hash": "9477633280866643828"
         },
         {
           "file": "apps/web/src/stores/widgets/WidgetPermissionStore.ts",
@@ -10008,7 +10012,7 @@
         },
         {
           "file": "apps/web/src/vector/index.html",
-          "hash": "10905902123742252563"
+          "hash": "8217904141676162458"
         },
         {
           "file": "apps/web/src/vector/index.ts",
@@ -14319,374 +14323,82 @@
           "hash": "14593624709524983722"
         }
       ],
-      "element-web-modules": [
+      "@element-hq/element-web-module-widget-lifecycle": [
         {
-          "file": "modules/.dockerignore",
-          "hash": "1246118994462859873"
+          "file": "modules/widget-lifecycle/README.md",
+          "hash": "18155897629885210351"
         },
         {
-          "file": "modules/.eslintrc.cjs",
-          "hash": "10088727841207637550"
+          "file": "modules/widget-lifecycle/e2e/fixture/widget.html",
+          "hash": "16364157158382627292"
         },
         {
-          "file": "modules/.gitignore",
-          "hash": "6572404006969856788"
+          "file": "modules/widget-lifecycle/e2e/widget-lifecycle.spec.ts",
+          "hash": "509710543013723780"
         },
         {
-          "file": "modules/.lintstagedrc",
-          "hash": "17925430476219898751"
-        },
-        {
-          "file": "modules/Dockerfile",
-          "hash": "16187961024713748768"
-        },
-        {
-          "file": "modules/README.md",
-          "hash": "4168756847263865858"
-        },
-        {
-          "file": "modules/package.json",
-          "hash": "14563524719831199582",
+          "file": "modules/widget-lifecycle/package.json",
+          "hash": "14397750798563723926",
           "deps": [
-            "@element-hq/element-web-playwright-common",
-            "npm:eslint",
-            "npm:eslint-config-google",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-jsx-a11y",
-            "npm:eslint-plugin-matrix-org",
-            "npm:eslint-plugin-react",
-            "npm:eslint-plugin-react-compiler@19.1.0-rc.2",
-            "npm:eslint-plugin-unicorn"
-          ]
-        },
-        {
-          "file": "modules/playwright.config.ts",
-          "hash": "15838666102596260417"
-        },
-        {
-          "file": "modules/playwright/element-web-test.ts",
-          "hash": "7713454969632273231"
-        },
-        {
-          "file": "modules/project.json",
-          "hash": "707399733293975"
-        },
-        {
-          "file": "modules/tsconfig.json",
-          "hash": "17341369138326436045"
-        }
-      ],
-      "@element-hq/element-web-module-banner": [
-        {
-          "file": "modules/banner/README.md",
-          "hash": "18402335758370496821"
-        },
-        {
-          "file": "modules/banner/e2e/banner.spec.ts",
-          "hash": "18101876557725470007"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/app1.png",
-          "hash": "14976833407114004037"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/app2.png",
-          "hash": "15564603690407808824"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/logo.svg",
-          "hash": "12555679049467332358"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/navigation.json",
-          "hash": "3438981683221208644"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app1.svg",
-          "hash": "4475330493142400579"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app10.svg",
-          "hash": "8716291269303893691"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app11.svg",
-          "hash": "17361724361553599535"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app2.svg",
-          "hash": "8069187129075921961"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app3.svg",
-          "hash": "10426776796364360449"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app4.svg",
-          "hash": "3921724316842808012"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app5.svg",
-          "hash": "16185506427797419105"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app6.svg",
-          "hash": "14344009002599440119"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app7.svg",
-          "hash": "1189813352581786393"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app8.svg",
-          "hash": "4251541613909422536"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/app9.svg",
-          "hash": "18022354593576250291"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/logofull.svg",
-          "hash": "11724630071457955182"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/opendesk/logomark.svg",
-          "hash": "1955005533257101596"
-        },
-        {
-          "file": "modules/banner/e2e/fixture/silent/index.html",
-          "hash": "3673108920611640699"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-static-config-should-render-1-linux.aria.yml",
-          "hash": "13887579754196691144"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-static-config-should-render-2-linux.aria.yml",
-          "hash": "115732256523509232"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-univention-config-should-render-1-linux.aria.yml",
-          "hash": "13887579754196691144"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-univention-config-should-render-2-linux.aria.yml",
-          "hash": "4358783135268320523"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-menu-linux.png",
-          "hash": "13392845307340010881"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-nav-hover-linux.png",
-          "hash": "131916974257398279"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-nav-linux.png",
-          "hash": "4887454254120052363"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-error-linux.png",
-          "hash": "15118489810827861738"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-menu-linux.png",
-          "hash": "14222780945472489906"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-menu-loading-linux.png",
-          "hash": "12349556703431124293"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-nav-hover-linux.png",
-          "hash": "3641419696615569179"
-        },
-        {
-          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-nav-linux.png",
-          "hash": "2520390245133381136"
-        },
-        {
-          "file": "modules/banner/package.json",
-          "hash": "13351113424930707054",
-          "deps": [
-            "npm:@arcmantle/vite-plugin-import-css-sheet",
             "@element-hq/element-web-module-api",
             "npm:@types/node",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vitejs/plugin-react",
-            "npm:matrix-web-i18n",
-            "npm:matrix-widget-api",
-            "npm:react",
             "npm:typescript",
             "npm:vite@8.0.16",
-            "npm:vite-plugin-node-polyfills",
-            "npm:vite-plugin-svgr",
-            "npm:@radix-ui/react-dialog",
-            "npm:@vector-im/compound-design-tokens@10.2.2",
-            "npm:@vector-im/compound-web@9.7.1",
-            "npm:framer-motion",
-            "npm:styled-components",
+            "npm:vitest",
             "npm:zod@4.4.3"
           ]
         },
         {
-          "file": "modules/banner/project.json",
-          "hash": "1203461843366005131"
+          "file": "modules/widget-lifecycle/project.json",
+          "hash": "15908122329144054837"
         },
         {
-          "file": "modules/banner/src/Banner.tsx",
-          "hash": "3743617204627419456"
+          "file": "modules/widget-lifecycle/src/WidgetLifecycleModule.test.ts",
+          "hash": "10530850999957220251"
         },
         {
-          "file": "modules/banner/src/Logo.tsx",
-          "hash": "7538858872393240708"
+          "file": "modules/widget-lifecycle/src/WidgetLifecycleModule.ts",
+          "hash": "7954727765579549863"
         },
         {
-          "file": "modules/banner/src/Menu.tsx",
-          "hash": "8344848640154894072"
+          "file": "modules/widget-lifecycle/src/config.test.ts",
+          "hash": "14232300421485650436"
         },
         {
-          "file": "modules/banner/src/Univention/Menu.tsx",
-          "hash": "10809738779895452991"
+          "file": "modules/widget-lifecycle/src/config.ts",
+          "hash": "5578599410910231367"
         },
         {
-          "file": "modules/banner/src/Univention/SilentLogin.tsx",
-          "hash": "2039111229434222407"
+          "file": "modules/widget-lifecycle/src/index.ts",
+          "hash": "13123156196378419653"
         },
         {
-          "file": "modules/banner/src/Univention/navigation.ts",
-          "hash": "5121161836194484705"
+          "file": "modules/widget-lifecycle/src/utils/constructWidgetPermissions.test.ts",
+          "hash": "13135318512364135466"
         },
         {
-          "file": "modules/banner/src/config.ts",
-          "hash": "11961486043317574261"
+          "file": "modules/widget-lifecycle/src/utils/constructWidgetPermissions.ts",
+          "hash": "18323356111434345837"
         },
         {
-          "file": "modules/banner/src/index.tsx",
-          "hash": "10383762943164268001"
+          "file": "modules/widget-lifecycle/src/utils/matchPattern.test.ts",
+          "hash": "8859721358034332391"
         },
         {
-          "file": "modules/banner/src/style.css",
-          "hash": "16873831179598430618"
+          "file": "modules/widget-lifecycle/src/utils/matchPattern.ts",
+          "hash": "13647916433565125855"
         },
         {
-          "file": "modules/banner/src/theme.ts",
-          "hash": "8985488101946804879"
+          "file": "modules/widget-lifecycle/tsconfig.json",
+          "hash": "16442089687703850380"
         },
         {
-          "file": "modules/banner/src/translations.json",
-          "hash": "12622055701380158318"
+          "file": "modules/widget-lifecycle/vite.config.ts",
+          "hash": "10830876541150073945"
         },
         {
-          "file": "modules/banner/src/trigger.svg",
-          "hash": "9635768152710437249"
-        },
-        {
-          "file": "modules/banner/src/vite-env.d.ts",
-          "hash": "12920009744814808043"
-        },
-        {
-          "file": "modules/banner/tsconfig.json",
-          "hash": "5995487147018214856"
-        },
-        {
-          "file": "modules/banner/vite.config.ts",
-          "hash": "8293379944023176594"
-        }
-      ],
-      "@element-hq/element-web-module-restricted-guests": [
-        {
-          "file": "modules/restricted-guests/README.md",
-          "hash": "7020178796490182836"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/restricted-guests.spec.ts",
-          "hash": "14618490508218958440"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/services.ts",
-          "hash": "3772561486524636922"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/dialog-linux.png",
-          "hash": "10420422079998034458"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/dialog-login-linux.png",
-          "hash": "487715749655762618"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/login-legacy-linux.png",
-          "hash": "10275326093702428654"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/login-mas-linux.png",
-          "hash": "17784184269655070879"
-        },
-        {
-          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/preview-bar-linux.png",
-          "hash": "13397638648334569594"
-        },
-        {
-          "file": "modules/restricted-guests/package.json",
-          "hash": "2024773328490681461",
-          "deps": [
-            "npm:@arcmantle/vite-plugin-import-css-sheet",
-            "@element-hq/element-web-module-api",
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@vitejs/plugin-react",
-            "npm:react",
-            "npm:testcontainers",
-            "npm:typescript",
-            "npm:vite@8.0.16",
-            "npm:vite-plugin-node-polyfills",
-            "npm:@vector-im/compound-design-tokens@10.2.2",
-            "npm:@vector-im/compound-web@9.7.1",
-            "npm:styled-components",
-            "npm:zod@4.4.3"
-          ]
-        },
-        {
-          "file": "modules/restricted-guests/project.json",
-          "hash": "194344232513800742"
-        },
-        {
-          "file": "modules/restricted-guests/src/AuthFooter.tsx",
-          "hash": "13893033403201705941"
-        },
-        {
-          "file": "modules/restricted-guests/src/RegisterDialog.tsx",
-          "hash": "2685094817128245927"
-        },
-        {
-          "file": "modules/restricted-guests/src/RoomPreviewBar.tsx",
-          "hash": "10653672084165358508"
-        },
-        {
-          "file": "modules/restricted-guests/src/config.ts",
-          "hash": "17439690912911319389"
-        },
-        {
-          "file": "modules/restricted-guests/src/index.tsx",
-          "hash": "8849673572080454150"
-        },
-        {
-          "file": "modules/restricted-guests/src/translations.json",
-          "hash": "5076242660355636100"
-        },
-        {
-          "file": "modules/restricted-guests/src/vite-env.d.ts",
-          "hash": "7467359864712285783"
-        },
-        {
-          "file": "modules/restricted-guests/tsconfig.json",
-          "hash": "5995487147018214856"
-        },
-        {
-          "file": "modules/restricted-guests/vite.config.ts",
-          "hash": "5297883787162306397"
+          "file": "modules/widget-lifecycle/vitest.config.ts",
+          "hash": "6294780462505013432"
         }
       ],
       "element-desktop": [
@@ -15245,1115 +14957,6 @@
         {
           "file": "apps/desktop/vitest.config.ts",
           "hash": "1878011883761485358"
-        }
-      ],
-      "element-web-monorepo": [
-        {
-          "file": ".arts/settings.json",
-          "hash": "1870951023159426728"
-        },
-        {
-          "file": ".gitignore",
-          "hash": "1609126548731258236"
-        },
-        {
-          "file": "AUTHORS.rst",
-          "hash": "9108952595356014057"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "hash": "4025929002080281564"
-        },
-        {
-          "file": "CONTRIBUTING.md",
-          "hash": "12649129753480285992"
-        },
-        {
-          "file": "LICENSE-AGPL-3.0",
-          "hash": "14366102630656131252"
-        },
-        {
-          "file": "LICENSE-COMMERCIAL",
-          "hash": "13493385359566137723"
-        },
-        {
-          "file": "LICENSE-GPL-3.0",
-          "hash": "17672936396789512931"
-        },
-        {
-          "file": "README.md",
-          "hash": "16669289806322100527"
-        },
-        {
-          "file": "code_style.md",
-          "hash": "13498653372129048458"
-        },
-        {
-          "file": "developer_guide.md",
-          "hash": "8847043176560251737"
-        },
-        {
-          "file": "diff-cover.toml",
-          "hash": "5953829346230947353"
-        },
-        {
-          "file": "diy/components-directory.md",
-          "hash": "573652609873963942"
-        },
-        {
-          "file": "docs/.vitepress/config.ts",
-          "hash": "17008549544972367054"
-        },
-        {
-          "file": "docs/MVVM-v1.md",
-          "hash": "3226414611071728791"
-        },
-        {
-          "file": "docs/MVVM.md",
-          "hash": "5682622016637961363"
-        },
-        {
-          "file": "docs/app-load.md",
-          "hash": "4959937019784259311"
-        },
-        {
-          "file": "docs/betas.md",
-          "hash": "1533414678403728125"
-        },
-        {
-          "file": "docs/changelogs/CHANGELOG-2022.md",
-          "hash": "15109242759221812660"
-        },
-        {
-          "file": "docs/changelogs/CHANGELOG-2023.md",
-          "hash": "3011782433476980611"
-        },
-        {
-          "file": "docs/changelogs/CHANGELOG-pre-2022.md",
-          "hash": "2899789381170228985"
-        },
-        {
-          "file": "docs/choosing-an-issue.md",
-          "hash": "13524026819315838442"
-        },
-        {
-          "file": "docs/ciderEditor.md",
-          "hash": "17285605349603168873"
-        },
-        {
-          "file": "docs/config.md",
-          "hash": "13976613543520364154"
-        },
-        {
-          "file": "docs/custom-home.md",
-          "hash": "9084248971281045503"
-        },
-        {
-          "file": "docs/customisations.md",
-          "hash": "15822722098401900785"
-        },
-        {
-          "file": "docs/debugging.md",
-          "hash": "9146334625712250907"
-        },
-        {
-          "file": "docs/deprecated-modules.md",
-          "hash": "10475555470822927313"
-        },
-        {
-          "file": "docs/e2ee.md",
-          "hash": "12742322469958365127"
-        },
-        {
-          "file": "docs/feature-flags.md",
-          "hash": "14489071632566374123"
-        },
-        {
-          "file": "docs/feature-list-and-design.md",
-          "hash": "2087068922492047613"
-        },
-        {
-          "file": "docs/features/README.md",
-          "hash": "17014908571379995102"
-        },
-        {
-          "file": "docs/features/composer.md",
-          "hash": "15432558397417484907"
-        },
-        {
-          "file": "docs/features/keyboardShortcuts.md",
-          "hash": "10609309815204610878"
-        },
-        {
-          "file": "docs/gdb.md",
-          "hash": "5956645889393952950"
-        },
-        {
-          "file": "docs/generated/[id].md",
-          "hash": "17045499822895854837"
-        },
-        {
-          "file": "docs/generated/[id].paths.ts",
-          "hash": "11852269973926218936"
-        },
-        {
-          "file": "docs/icons.md",
-          "hash": "16631994995729305061"
-        },
-        {
-          "file": "docs/img/RoomListStore2.png",
-          "hash": "16955561519552355613"
-        },
-        {
-          "file": "docs/img/pr-checks.png",
-          "hash": "13563962165988683283"
-        },
-        {
-          "file": "docs/index.md",
-          "hash": "12890644679440700590"
-        },
-        {
-          "file": "docs/install.md",
-          "hash": "4787724023231329777"
-        },
-        {
-          "file": "docs/jitsi-dev.md",
-          "hash": "7383035294959199134"
-        },
-        {
-          "file": "docs/jitsi.md",
-          "hash": "3369007390598054348"
-        },
-        {
-          "file": "docs/kubernetes.md",
-          "hash": "833861398202048562"
-        },
-        {
-          "file": "docs/labs.md",
-          "hash": "9657483293605329417"
-        },
-        {
-          "file": "docs/local-echo-dev.md",
-          "hash": "16746313748506383757"
-        },
-        {
-          "file": "docs/media-handling.md",
-          "hash": "18082417000018267705"
-        },
-        {
-          "file": "docs/memory-profiles-and-leaks.md",
-          "hash": "12942274129198149146"
-        },
-        {
-          "file": "docs/monorepo.md",
-          "hash": "10603114234757205534"
-        },
-        {
-          "file": "docs/native-node-modules.md",
-          "hash": "17753473627068542079"
-        },
-        {
-          "file": "docs/oidc.md",
-          "hash": "3372775188819829088"
-        },
-        {
-          "file": "docs/packaging.md",
-          "hash": "17009504042118506038"
-        },
-        {
-          "file": "docs/playwright.md",
-          "hash": "17074617939428768004"
-        },
-        {
-          "file": "docs/pr-previews.md",
-          "hash": "16694493080962826317"
-        },
-        {
-          "file": "docs/product-functionality-reference.md",
-          "hash": "3338374017682410349"
-        },
-        {
-          "file": "docs/readme-element-desktop.md",
-          "hash": "11525238086146169869"
-        },
-        {
-          "file": "docs/readme-element-web.md",
-          "hash": "8467400597159137400"
-        },
-        {
-          "file": "docs/readme-shared-components.md",
-          "hash": "960599486367238584"
-        },
-        {
-          "file": "docs/release.md",
-          "hash": "4799854512302913343"
-        },
-        {
-          "file": "docs/review.md",
-          "hash": "8632830451504559637"
-        },
-        {
-          "file": "docs/room-list-store.md",
-          "hash": "6588917050259284775"
-        },
-        {
-          "file": "docs/scrolling.md",
-          "hash": "14951437553919220188"
-        },
-        {
-          "file": "docs/settings.md",
-          "hash": "1885610975917806954"
-        },
-        {
-          "file": "docs/skinning.md",
-          "hash": "5111594155788351036"
-        },
-        {
-          "file": "docs/theming.md",
-          "hash": "6340265661619910746"
-        },
-        {
-          "file": "docs/translating-dev.md",
-          "hash": "8582560875715124071"
-        },
-        {
-          "file": "docs/translating.md",
-          "hash": "11563391379603757943"
-        },
-        {
-          "file": "docs/updates.md",
-          "hash": "8994602199323619914"
-        },
-        {
-          "file": "docs/usercontent.md",
-          "hash": "6605382108578697198"
-        },
-        {
-          "file": "docs/widget-layouts.md",
-          "hash": "11500016133579488825"
-        },
-        {
-          "file": "docs/windows-requirements.md",
-          "hash": "11588265524705423477"
-        },
-        {
-          "file": "docs/zh-CN/MVVM-v1.md",
-          "hash": "11756520767394683122"
-        },
-        {
-          "file": "docs/zh-CN/MVVM.md",
-          "hash": "6635179077106760957"
-        },
-        {
-          "file": "docs/zh-CN/app-load.md",
-          "hash": "12502383175344487209"
-        },
-        {
-          "file": "docs/zh-CN/betas.md",
-          "hash": "12479653237887570884"
-        },
-        {
-          "file": "docs/zh-CN/choosing-an-issue.md",
-          "hash": "13585148727818680755"
-        },
-        {
-          "file": "docs/zh-CN/ciderEditor.md",
-          "hash": "3875683971248512129"
-        },
-        {
-          "file": "docs/zh-CN/config.md",
-          "hash": "6855173666250314152"
-        },
-        {
-          "file": "docs/zh-CN/custom-home.md",
-          "hash": "10592243495171360229"
-        },
-        {
-          "file": "docs/zh-CN/customisations.md",
-          "hash": "5155307650285481188"
-        },
-        {
-          "file": "docs/zh-CN/debugging.md",
-          "hash": "16305951124994710024"
-        },
-        {
-          "file": "docs/zh-CN/deprecated-modules.md",
-          "hash": "9646295441575990038"
-        },
-        {
-          "file": "docs/zh-CN/e2ee.md",
-          "hash": "5717769799493143864"
-        },
-        {
-          "file": "docs/zh-CN/feature-flags.md",
-          "hash": "17776948959028519580"
-        },
-        {
-          "file": "docs/zh-CN/gdb.md",
-          "hash": "12479322526123743641"
-        },
-        {
-          "file": "docs/zh-CN/icons.md",
-          "hash": "12533365990763805062"
-        },
-        {
-          "file": "docs/zh-CN/index.md",
-          "hash": "12890644679440700590"
-        },
-        {
-          "file": "docs/zh-CN/install.md",
-          "hash": "9625498686689091450"
-        },
-        {
-          "file": "docs/zh-CN/jitsi-dev.md",
-          "hash": "11146973989940259455"
-        },
-        {
-          "file": "docs/zh-CN/jitsi.md",
-          "hash": "7785076289947360270"
-        },
-        {
-          "file": "docs/zh-CN/kubernetes.md",
-          "hash": "14701121496796841852"
-        },
-        {
-          "file": "docs/zh-CN/labs.md",
-          "hash": "13970740608035657847"
-        },
-        {
-          "file": "docs/zh-CN/local-echo-dev.md",
-          "hash": "18093316686669944157"
-        },
-        {
-          "file": "docs/zh-CN/media-handling.md",
-          "hash": "7786924081885891486"
-        },
-        {
-          "file": "docs/zh-CN/memory-profiles-and-leaks.md",
-          "hash": "4766680109861561972"
-        },
-        {
-          "file": "docs/zh-CN/monorepo.md",
-          "hash": "11872139660694639720"
-        },
-        {
-          "file": "docs/zh-CN/native-node-modules.md",
-          "hash": "14636471359255498555"
-        },
-        {
-          "file": "docs/zh-CN/oidc.md",
-          "hash": "14832597249179958819"
-        },
-        {
-          "file": "docs/zh-CN/packaging.md",
-          "hash": "11080682516620787102"
-        },
-        {
-          "file": "docs/zh-CN/playwright.md",
-          "hash": "7813301723332438154"
-        },
-        {
-          "file": "docs/zh-CN/pr-previews.md",
-          "hash": "9761367239055457850"
-        },
-        {
-          "file": "docs/zh-CN/readme-element-desktop.md",
-          "hash": "11525238086146169869"
-        },
-        {
-          "file": "docs/zh-CN/readme-element-web.md",
-          "hash": "8467400597159137400"
-        },
-        {
-          "file": "docs/zh-CN/readme-shared-components.md",
-          "hash": "960599486367238584"
-        },
-        {
-          "file": "docs/zh-CN/release.md",
-          "hash": "16918272999972369244"
-        },
-        {
-          "file": "docs/zh-CN/review.md",
-          "hash": "16199427185502732881"
-        },
-        {
-          "file": "docs/zh-CN/room-list-store.md",
-          "hash": "14862440969511518353"
-        },
-        {
-          "file": "docs/zh-CN/scrolling.md",
-          "hash": "8200358090408602133"
-        },
-        {
-          "file": "docs/zh-CN/settings.md",
-          "hash": "8736223020227680492"
-        },
-        {
-          "file": "docs/zh-CN/shared-components-directory.md",
-          "hash": "13212135860958679681"
-        },
-        {
-          "file": "docs/zh-CN/skinning.md",
-          "hash": "16046027079875757283"
-        },
-        {
-          "file": "docs/zh-CN/theme-customization-reference.md",
-          "hash": "9742716593347180742"
-        },
-        {
-          "file": "docs/zh-CN/theming.md",
-          "hash": "8855995348621562586"
-        },
-        {
-          "file": "docs/zh-CN/translating-dev.md",
-          "hash": "17118581151712675009"
-        },
-        {
-          "file": "docs/zh-CN/translating.md",
-          "hash": "12417517907964519989"
-        },
-        {
-          "file": "docs/zh-CN/updates.md",
-          "hash": "8919977559526489325"
-        },
-        {
-          "file": "docs/zh-CN/usercontent.md",
-          "hash": "16874135415152224919"
-        },
-        {
-          "file": "docs/zh-CN/widget-layouts.md",
-          "hash": "15833109037398907953"
-        },
-        {
-          "file": "docs/zh-CN/windows-requirements.md",
-          "hash": "13190351230307776967"
-        },
-        {
-          "file": "knip.ts",
-          "hash": "8754126472297563666"
-        },
-        {
-          "file": "localazy.json",
-          "hash": "17847527912108034720"
-        },
-        {
-          "file": "nx.json",
-          "hash": "6519810654926264928"
-        },
-        {
-          "file": "package.json",
-          "hash": "529620019124943937"
-        },
-        {
-          "file": "patches/@arcmantle__vite-plugin-import-css-sheet.patch",
-          "hash": "1062087435277427573"
-        },
-        {
-          "file": "patches/@dnd-kit__abstract.patch",
-          "hash": "12457506243822064690"
-        },
-        {
-          "file": "patches/@matrix-org__react-sdk-module-api.patch",
-          "hash": "3229687806496199120"
-        },
-        {
-          "file": "patches/@types__auto-launch.patch",
-          "hash": "16607994502445623383"
-        },
-        {
-          "file": "patches/@vector-im__matrix-wysiwyg.patch",
-          "hash": "9779143377489893520"
-        },
-        {
-          "file": "patches/await-lock.patch",
-          "hash": "7410736138075849005"
-        },
-        {
-          "file": "patches/jest-fixed-jsdom.patch",
-          "hash": "1998831737784182442"
-        },
-        {
-          "file": "patches/jsdom.patch",
-          "hash": "10203157694319394150"
-        },
-        {
-          "file": "patches/knip.patch",
-          "hash": "2649501426167628434"
-        },
-        {
-          "file": "patches/linkify-html.patch",
-          "hash": "14681211224647053614"
-        },
-        {
-          "file": "patches/plist.patch",
-          "hash": "5174417230257530606"
-        },
-        {
-          "file": "patches/postcss-mixins.patch",
-          "hash": "6296627510245294691"
-        },
-        {
-          "file": "patches/react-blurhash.patch",
-          "hash": "15708257538841476464"
-        },
-        {
-          "file": "playwright-merge.config.ts",
-          "hash": "12848520169129735462"
-        },
-        {
-          "file": "pnpm-lock.yaml",
-          "hash": "1611088183838004832"
-        },
-        {
-          "file": "pnpm-workspace.yaml",
-          "hash": "12120347487024552720"
-        },
-        {
-          "file": "scripts/analyse_unused_exports.ts",
-          "hash": "18317803970771666155"
-        },
-        {
-          "file": "scripts/docker-link-repos.sh",
-          "hash": "14045336774200613607"
-        },
-        {
-          "file": "scripts/docker-package.sh",
-          "hash": "7984694385806698273"
-        },
-        {
-          "file": "scripts/fetchdep.sh",
-          "hash": "914594896729278072"
-        },
-        {
-          "file": "scripts/gen-workflow-mermaid.ts",
-          "hash": "17552846847923693585"
-        },
-        {
-          "file": "scripts/get-version-from-git.sh",
-          "hash": "6097669992060973935"
-        },
-        {
-          "file": "scripts/issues-burndown.pl",
-          "hash": "238946697653531486"
-        },
-        {
-          "file": "scripts/issues-no-state.pl",
-          "hash": "14460636774576620904"
-        },
-        {
-          "file": "scripts/layered.sh",
-          "hash": "11788785928137098681"
-        },
-        {
-          "file": "scripts/normalize-version.sh",
-          "hash": "18120967594742439696"
-        },
-        {
-          "file": "scripts/pnpm-link.ts",
-          "hash": "2089009016919722930"
-        },
-        {
-          "file": "vitest.config.ts",
-          "hash": "16890243860362386917"
-        }
-      ],
-      "@element-hq/element-web-module-widget-lifecycle": [
-        {
-          "file": "modules/widget-lifecycle/README.md",
-          "hash": "18155897629885210351"
-        },
-        {
-          "file": "modules/widget-lifecycle/e2e/fixture/widget.html",
-          "hash": "16364157158382627292"
-        },
-        {
-          "file": "modules/widget-lifecycle/e2e/widget-lifecycle.spec.ts",
-          "hash": "509710543013723780"
-        },
-        {
-          "file": "modules/widget-lifecycle/package.json",
-          "hash": "14397750798563723926",
-          "deps": [
-            "@element-hq/element-web-module-api",
-            "npm:@types/node",
-            "npm:typescript",
-            "npm:vite@8.0.16",
-            "npm:vitest",
-            "npm:zod@4.4.3"
-          ]
-        },
-        {
-          "file": "modules/widget-lifecycle/project.json",
-          "hash": "15908122329144054837"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/WidgetLifecycleModule.test.ts",
-          "hash": "10530850999957220251"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/WidgetLifecycleModule.ts",
-          "hash": "7954727765579549863"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/config.test.ts",
-          "hash": "14232300421485650436"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/config.ts",
-          "hash": "5578599410910231367"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/index.ts",
-          "hash": "13123156196378419653"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/utils/constructWidgetPermissions.test.ts",
-          "hash": "13135318512364135466"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/utils/constructWidgetPermissions.ts",
-          "hash": "18323356111434345837"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/utils/matchPattern.test.ts",
-          "hash": "8859721358034332391"
-        },
-        {
-          "file": "modules/widget-lifecycle/src/utils/matchPattern.ts",
-          "hash": "13647916433565125855"
-        },
-        {
-          "file": "modules/widget-lifecycle/tsconfig.json",
-          "hash": "16442089687703850380"
-        },
-        {
-          "file": "modules/widget-lifecycle/vite.config.ts",
-          "hash": "10830876541150073945"
-        },
-        {
-          "file": "modules/widget-lifecycle/vitest.config.ts",
-          "hash": "6294780462505013432"
-        }
-      ],
-      "@element-hq/element-web-playwright-common": [
-        {
-          "file": "packages/playwright-common/.gitignore",
-          "hash": "2275029701022766730"
-        },
-        {
-          "file": "packages/playwright-common/Dockerfile",
-          "hash": "18297597943287111760"
-        },
-        {
-          "file": "packages/playwright-common/README.md",
-          "hash": "16409203769353832833"
-        },
-        {
-          "file": "packages/playwright-common/docker-entrypoint.sh",
-          "hash": "10527636811907052555"
-        },
-        {
-          "file": "packages/playwright-common/package.json",
-          "hash": "9628476482047101404",
-          "deps": [
-            "@element-hq/element-web-module-api",
-            "npm:@playwright/test",
-            "npm:playwright-core",
-            "npm:@types/lodash-es",
-            "npm:typescript",
-            "npm:@axe-core/playwright",
-            "npm:@testcontainers/postgresql",
-            "npm:glob@13.0.6",
-            "npm:lodash-es",
-            "npm:mailpit-api",
-            "npm:strip-ansi@7.2.0",
-            "npm:testcontainers",
-            "npm:wait-on",
-            "npm:yaml"
-          ]
-        },
-        {
-          "file": "packages/playwright-common/playwright-screenshots.sh",
-          "hash": "4625338379924853974"
-        },
-        {
-          "file": "packages/playwright-common/project.json",
-          "hash": "13430239277134373538"
-        },
-        {
-          "file": "packages/playwright-common/src/expect/axe.ts",
-          "hash": "10469418961831303636"
-        },
-        {
-          "file": "packages/playwright-common/src/expect/index.ts",
-          "hash": "11458559438792645616"
-        },
-        {
-          "file": "packages/playwright-common/src/expect/screenshot.ts",
-          "hash": "4861625970983440219"
-        },
-        {
-          "file": "packages/playwright-common/src/fixtures/axe.ts",
-          "hash": "12288922371590491938"
-        },
-        {
-          "file": "packages/playwright-common/src/fixtures/index.ts",
-          "hash": "6001866791131429796"
-        },
-        {
-          "file": "packages/playwright-common/src/fixtures/panel.ts",
-          "hash": "17137621377739182122"
-        },
-        {
-          "file": "packages/playwright-common/src/fixtures/services.ts",
-          "hash": "14566090823411574440"
-        },
-        {
-          "file": "packages/playwright-common/src/fixtures/user.ts",
-          "hash": "5230166991386776669"
-        },
-        {
-          "file": "packages/playwright-common/src/flaky-reporter.ts",
-          "hash": "8276611570205100661"
-        },
-        {
-          "file": "packages/playwright-common/src/index.ts",
-          "hash": "13440133905447803428"
-        },
-        {
-          "file": "packages/playwright-common/src/stale-screenshot-reporter.ts",
-          "hash": "18128214757638389681"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/HomeserverContainer.ts",
-          "hash": "9463024707886798431"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/index.ts",
-          "hash": "7594886755780728581"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/mailpit.ts",
-          "hash": "12689100885591269545"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/mas-config.ts",
-          "hash": "6089801285160304403"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/mas.ts",
-          "hash": "4174586098897539126"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/postgres.ts",
-          "hash": "17201425285774350591"
-        },
-        {
-          "file": "packages/playwright-common/src/testcontainers/synapse.ts",
-          "hash": "11330661150225122952"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/api.ts",
-          "hash": "12350849025368230712"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/config_json.ts",
-          "hash": "9276695282003350765"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/context.ts",
-          "hash": "6955291262923993576"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/logger.ts",
-          "hash": "9810367867420219568"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/object.ts",
-          "hash": "4844813815018750356"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/port.ts",
-          "hash": "10401676122978471174"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/rand.ts",
-          "hash": "12646777455254654863"
-        },
-        {
-          "file": "packages/playwright-common/src/utils/toasts.ts",
-          "hash": "10733347492681198351"
-        },
-        {
-          "file": "packages/playwright-common/tsconfig.json",
-          "hash": "2167356415048078818"
-        }
-      ],
-      "@element-hq/element-web-module-widget-toggle": [
-        {
-          "file": "modules/widget-toggles/README.md",
-          "hash": "9691190802049262869"
-        },
-        {
-          "file": "modules/widget-toggles/e2e/fixture/widget.html",
-          "hash": "13021655528630336920"
-        },
-        {
-          "file": "modules/widget-toggles/e2e/snapshots/widget-toggles.spec.ts/widget-toggle-button-default-icon-linux.png",
-          "hash": "4447337200188099381"
-        },
-        {
-          "file": "modules/widget-toggles/e2e/widget-toggles.spec.ts",
-          "hash": "2826046303489449735"
-        },
-        {
-          "file": "modules/widget-toggles/package.json",
-          "hash": "12526321087584310730",
-          "deps": [
-            "npm:@arcmantle/vite-plugin-import-css-sheet",
-            "@element-hq/element-web-module-api",
-            "npm:@testing-library/dom",
-            "npm:@testing-library/react",
-            "npm:@testing-library/user-event",
-            "npm:@types/node",
-            "npm:@types/react",
-            "npm:@vitejs/plugin-react",
-            "npm:@vitest/browser-playwright",
-            "npm:react",
-            "npm:typescript",
-            "npm:vite@8.0.16",
-            "npm:vite-plugin-node-polyfills",
-            "npm:vite-plugin-svgr",
-            "npm:vitest",
-            "npm:@vector-im/compound-design-tokens@10.2.2",
-            "npm:@vector-im/compound-web@9.7.1",
-            "npm:matrix-widget-api",
-            "npm:styled-components",
-            "npm:zod@4.4.3"
-          ]
-        },
-        {
-          "file": "modules/widget-toggles/project.json",
-          "hash": "5317597327175169738"
-        },
-        {
-          "file": "modules/widget-toggles/src/config.test.ts",
-          "hash": "5630017996241325422"
-        },
-        {
-          "file": "modules/widget-toggles/src/config.ts",
-          "hash": "6222229260028560996"
-        },
-        {
-          "file": "modules/widget-toggles/src/index.test.ts",
-          "hash": "1304403849104167765"
-        },
-        {
-          "file": "modules/widget-toggles/src/index.tsx",
-          "hash": "3326905838201365508"
-        },
-        {
-          "file": "modules/widget-toggles/src/tests/mocks.ts",
-          "hash": "18262528215664740336"
-        },
-        {
-          "file": "modules/widget-toggles/src/tests/setupTests.ts",
-          "hash": "9960444596565998832"
-        },
-        {
-          "file": "modules/widget-toggles/src/toggle.test.tsx",
-          "hash": "16154416789947245887"
-        },
-        {
-          "file": "modules/widget-toggles/src/toggle.tsx",
-          "hash": "6583812670676225409"
-        },
-        {
-          "file": "modules/widget-toggles/tsconfig.json",
-          "hash": "5995487147018214856"
-        },
-        {
-          "file": "modules/widget-toggles/vite.config.ts",
-          "hash": "4662856107333730671"
-        },
-        {
-          "file": "modules/widget-toggles/vitest.config.ts",
-          "hash": "6345085472565385871"
-        }
-      ],
-      "@element-hq/element-web-module-api": [
-        {
-          "file": "packages/module-api/.gitignore",
-          "hash": "3365683188059852574"
-        },
-        {
-          "file": "packages/module-api/Dockerfile",
-          "hash": "782080374534490800"
-        },
-        {
-          "file": "packages/module-api/README.md",
-          "hash": "16424897497576939655"
-        },
-        {
-          "file": "packages/module-api/api-extractor.json",
-          "hash": "7651845631386741035"
-        },
-        {
-          "file": "packages/module-api/element-web-module-api.api.md",
-          "hash": "8350404651499441538"
-        },
-        {
-          "file": "packages/module-api/package.json",
-          "hash": "2551807674366341066",
-          "deps": [
-            "npm:@matrix-org/react-sdk-module-api",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:matrix-web-i18n",
-            "npm:matrix-widget-api",
-            "npm:react",
-            "npm:@microsoft/api-extractor",
-            "npm:@types/node",
-            "npm:@types/semver",
-            "npm:rollup-plugin-external-globals",
-            "npm:semver@7.8.5",
-            "npm:typescript",
-            "npm:unplugin-dts",
-            "npm:vite@8.0.16",
-            "npm:vitest"
-          ]
-        },
-        {
-          "file": "packages/module-api/project.json",
-          "hash": "2567274207145480287"
-        },
-        {
-          "file": "packages/module-api/src/@types/global.d.ts",
-          "hash": "5219004762638989533"
-        },
-        {
-          "file": "packages/module-api/src/api/auth.ts",
-          "hash": "11842131573118408207"
-        },
-        {
-          "file": "packages/module-api/src/api/builtins.ts",
-          "hash": "16714627712271635643"
-        },
-        {
-          "file": "packages/module-api/src/api/client.ts",
-          "hash": "7501536707893597522"
-        },
-        {
-          "file": "packages/module-api/src/api/composer.ts",
-          "hash": "9094483704249381888"
-        },
-        {
-          "file": "packages/module-api/src/api/config.ts",
-          "hash": "2723139322360144968"
-        },
-        {
-          "file": "packages/module-api/src/api/custom-components.ts",
-          "hash": "5534314172997112879"
-        },
-        {
-          "file": "packages/module-api/src/api/customisations.ts",
-          "hash": "15255322734186356638"
-        },
-        {
-          "file": "packages/module-api/src/api/dialog.ts",
-          "hash": "11040211598681764674"
-        },
-        {
-          "file": "packages/module-api/src/api/extras.ts",
-          "hash": "16093390870273204527"
-        },
-        {
-          "file": "packages/module-api/src/api/i18n.ts",
-          "hash": "10284049554516903401"
-        },
-        {
-          "file": "packages/module-api/src/api/index.test.ts",
-          "hash": "2954508285626170060"
-        },
-        {
-          "file": "packages/module-api/src/api/index.ts",
-          "hash": "1852477752159617435"
-        },
-        {
-          "file": "packages/module-api/src/api/legacy-customisations.ts",
-          "hash": "10976026668687038514"
-        },
-        {
-          "file": "packages/module-api/src/api/legacy-modules.ts",
-          "hash": "11512373917530608531"
-        },
-        {
-          "file": "packages/module-api/src/api/navigation.ts",
-          "hash": "10585671289399425586"
-        },
-        {
-          "file": "packages/module-api/src/api/profile.ts",
-          "hash": "17520928434600675742"
-        },
-        {
-          "file": "packages/module-api/src/api/stores.ts",
-          "hash": "5432692603446449204"
-        },
-        {
-          "file": "packages/module-api/src/api/watchable.test.ts",
-          "hash": "5196925398017620210"
-        },
-        {
-          "file": "packages/module-api/src/api/watchable.ts",
-          "hash": "13814313835028575572"
-        },
-        {
-          "file": "packages/module-api/src/api/widget-lifecycle.ts",
-          "hash": "13678843045061239340"
-        },
-        {
-          "file": "packages/module-api/src/api/widget.ts",
-          "hash": "17622668592135348695"
-        },
-        {
-          "file": "packages/module-api/src/index.ts",
-          "hash": "14841803528390719368"
-        },
-        {
-          "file": "packages/module-api/src/loader.test.ts",
-          "hash": "11624462004119455667"
-        },
-        {
-          "file": "packages/module-api/src/loader.ts",
-          "hash": "12510607514902674119"
-        },
-        {
-          "file": "packages/module-api/src/models/Room.ts",
-          "hash": "14762924178965000841"
-        },
-        {
-          "file": "packages/module-api/src/models/event.ts",
-          "hash": "1620800555992818595"
-        },
-        {
-          "file": "packages/module-api/src/utils.ts",
-          "hash": "7610454763734892695"
-        },
-        {
-          "file": "packages/module-api/tsconfig.json",
-          "hash": "476161937673831674"
-        },
-        {
-          "file": "packages/module-api/vite.base.ts",
-          "hash": "16584114607365193022"
-        },
-        {
-          "file": "packages/module-api/vite.config.ts",
-          "hash": "14228593587426097120"
-        },
-        {
-          "file": "packages/module-api/vitest.config.ts",
-          "hash": "11724645626928706655"
         }
       ],
       "@element-hq/web-shared-components": [
@@ -20103,6 +18706,1223 @@
         {
           "file": "packages/shared-components/vitest.config.ts",
           "hash": "10731021862940613466"
+        }
+      ],
+      "element-web-monorepo": [
+        {
+          "file": ".arts/settings.json",
+          "hash": "1870951023159426728"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "12260936101079519444"
+        },
+        {
+          "file": "AUTHORS.rst",
+          "hash": "9108952595356014057"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "4025929002080281564"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "12649129753480285992"
+        },
+        {
+          "file": "Jenkinsfile",
+          "hash": "15399982213309685505"
+        },
+        {
+          "file": "LICENSE-AGPL-3.0",
+          "hash": "14366102630656131252"
+        },
+        {
+          "file": "LICENSE-COMMERCIAL",
+          "hash": "13493385359566137723"
+        },
+        {
+          "file": "LICENSE-GPL-3.0",
+          "hash": "17672936396789512931"
+        },
+        {
+          "file": "README.md",
+          "hash": "16669289806322100527"
+        },
+        {
+          "file": "code_style.md",
+          "hash": "13498653372129048458"
+        },
+        {
+          "file": "developer_guide.md",
+          "hash": "8847043176560251737"
+        },
+        {
+          "file": "diff-cover.toml",
+          "hash": "5953829346230947353"
+        },
+        {
+          "file": "diy/components-directory.md",
+          "hash": "573652609873963942"
+        },
+        {
+          "file": "docs/.vitepress/config.ts",
+          "hash": "17008549544972367054"
+        },
+        {
+          "file": "docs/MVVM-v1.md",
+          "hash": "3226414611071728791"
+        },
+        {
+          "file": "docs/MVVM.md",
+          "hash": "5682622016637961363"
+        },
+        {
+          "file": "docs/app-load.md",
+          "hash": "4959937019784259311"
+        },
+        {
+          "file": "docs/betas.md",
+          "hash": "1533414678403728125"
+        },
+        {
+          "file": "docs/changelogs/CHANGELOG-2022.md",
+          "hash": "15109242759221812660"
+        },
+        {
+          "file": "docs/changelogs/CHANGELOG-2023.md",
+          "hash": "3011782433476980611"
+        },
+        {
+          "file": "docs/changelogs/CHANGELOG-pre-2022.md",
+          "hash": "2899789381170228985"
+        },
+        {
+          "file": "docs/choosing-an-issue.md",
+          "hash": "13524026819315838442"
+        },
+        {
+          "file": "docs/ciderEditor.md",
+          "hash": "17285605349603168873"
+        },
+        {
+          "file": "docs/config.md",
+          "hash": "13976613543520364154"
+        },
+        {
+          "file": "docs/custom-home.md",
+          "hash": "9084248971281045503"
+        },
+        {
+          "file": "docs/customisations.md",
+          "hash": "15822722098401900785"
+        },
+        {
+          "file": "docs/debugging.md",
+          "hash": "9146334625712250907"
+        },
+        {
+          "file": "docs/deprecated-modules.md",
+          "hash": "10475555470822927313"
+        },
+        {
+          "file": "docs/e2ee.md",
+          "hash": "12742322469958365127"
+        },
+        {
+          "file": "docs/feature-flags.md",
+          "hash": "14489071632566374123"
+        },
+        {
+          "file": "docs/feature-list-and-design.md",
+          "hash": "2087068922492047613"
+        },
+        {
+          "file": "docs/features/README.md",
+          "hash": "17014908571379995102"
+        },
+        {
+          "file": "docs/features/composer.md",
+          "hash": "15432558397417484907"
+        },
+        {
+          "file": "docs/features/keyboardShortcuts.md",
+          "hash": "10609309815204610878"
+        },
+        {
+          "file": "docs/gdb.md",
+          "hash": "5956645889393952950"
+        },
+        {
+          "file": "docs/generated/[id].md",
+          "hash": "17045499822895854837"
+        },
+        {
+          "file": "docs/generated/[id].paths.ts",
+          "hash": "11852269973926218936"
+        },
+        {
+          "file": "docs/icons.md",
+          "hash": "16631994995729305061"
+        },
+        {
+          "file": "docs/img/RoomListStore2.png",
+          "hash": "16955561519552355613"
+        },
+        {
+          "file": "docs/img/pr-checks.png",
+          "hash": "13563962165988683283"
+        },
+        {
+          "file": "docs/index.md",
+          "hash": "12890644679440700590"
+        },
+        {
+          "file": "docs/install.md",
+          "hash": "4787724023231329777"
+        },
+        {
+          "file": "docs/jitsi-dev.md",
+          "hash": "7383035294959199134"
+        },
+        {
+          "file": "docs/jitsi.md",
+          "hash": "3369007390598054348"
+        },
+        {
+          "file": "docs/kubernetes.md",
+          "hash": "833861398202048562"
+        },
+        {
+          "file": "docs/labs.md",
+          "hash": "9657483293605329417"
+        },
+        {
+          "file": "docs/local-echo-dev.md",
+          "hash": "16746313748506383757"
+        },
+        {
+          "file": "docs/media-handling.md",
+          "hash": "18082417000018267705"
+        },
+        {
+          "file": "docs/memory-profiles-and-leaks.md",
+          "hash": "12942274129198149146"
+        },
+        {
+          "file": "docs/monorepo.md",
+          "hash": "10603114234757205534"
+        },
+        {
+          "file": "docs/native-node-modules.md",
+          "hash": "17753473627068542079"
+        },
+        {
+          "file": "docs/oidc.md",
+          "hash": "3372775188819829088"
+        },
+        {
+          "file": "docs/packaging.md",
+          "hash": "17009504042118506038"
+        },
+        {
+          "file": "docs/playwright.md",
+          "hash": "17074617939428768004"
+        },
+        {
+          "file": "docs/pr-previews.md",
+          "hash": "16694493080962826317"
+        },
+        {
+          "file": "docs/product-functionality-reference.md",
+          "hash": "3338374017682410349"
+        },
+        {
+          "file": "docs/readme-element-desktop.md",
+          "hash": "11525238086146169869"
+        },
+        {
+          "file": "docs/readme-element-web.md",
+          "hash": "8467400597159137400"
+        },
+        {
+          "file": "docs/readme-shared-components.md",
+          "hash": "960599486367238584"
+        },
+        {
+          "file": "docs/release.md",
+          "hash": "4799854512302913343"
+        },
+        {
+          "file": "docs/review.md",
+          "hash": "8632830451504559637"
+        },
+        {
+          "file": "docs/room-list-store.md",
+          "hash": "6588917050259284775"
+        },
+        {
+          "file": "docs/scrolling.md",
+          "hash": "14951437553919220188"
+        },
+        {
+          "file": "docs/settings.md",
+          "hash": "1885610975917806954"
+        },
+        {
+          "file": "docs/skinning.md",
+          "hash": "5111594155788351036"
+        },
+        {
+          "file": "docs/theming.md",
+          "hash": "6340265661619910746"
+        },
+        {
+          "file": "docs/translating-dev.md",
+          "hash": "8582560875715124071"
+        },
+        {
+          "file": "docs/translating.md",
+          "hash": "11563391379603757943"
+        },
+        {
+          "file": "docs/updates.md",
+          "hash": "8994602199323619914"
+        },
+        {
+          "file": "docs/usercontent.md",
+          "hash": "6605382108578697198"
+        },
+        {
+          "file": "docs/widget-layouts.md",
+          "hash": "11500016133579488825"
+        },
+        {
+          "file": "docs/windows-requirements.md",
+          "hash": "11588265524705423477"
+        },
+        {
+          "file": "element-web.yaml",
+          "hash": "12507261622104020596"
+        },
+        {
+          "file": "knip.ts",
+          "hash": "8754126472297563666"
+        },
+        {
+          "file": "localazy.json",
+          "hash": "17847527912108034720"
+        },
+        {
+          "file": "nx.json",
+          "hash": "6519810654926264928"
+        },
+        {
+          "file": "package.json",
+          "hash": "529620019124943937"
+        },
+        {
+          "file": "patches/@arcmantle__vite-plugin-import-css-sheet.patch",
+          "hash": "1062087435277427573"
+        },
+        {
+          "file": "patches/@dnd-kit__abstract.patch",
+          "hash": "12457506243822064690"
+        },
+        {
+          "file": "patches/@matrix-org__react-sdk-module-api.patch",
+          "hash": "3229687806496199120"
+        },
+        {
+          "file": "patches/@types__auto-launch.patch",
+          "hash": "16607994502445623383"
+        },
+        {
+          "file": "patches/@vector-im__matrix-wysiwyg.patch",
+          "hash": "9779143377489893520"
+        },
+        {
+          "file": "patches/await-lock.patch",
+          "hash": "7410736138075849005"
+        },
+        {
+          "file": "patches/jest-fixed-jsdom.patch",
+          "hash": "1998831737784182442"
+        },
+        {
+          "file": "patches/jsdom.patch",
+          "hash": "10203157694319394150"
+        },
+        {
+          "file": "patches/knip.patch",
+          "hash": "2649501426167628434"
+        },
+        {
+          "file": "patches/linkify-html.patch",
+          "hash": "14681211224647053614"
+        },
+        {
+          "file": "patches/plist.patch",
+          "hash": "5174417230257530606"
+        },
+        {
+          "file": "patches/postcss-mixins.patch",
+          "hash": "6296627510245294691"
+        },
+        {
+          "file": "patches/react-blurhash.patch",
+          "hash": "15708257538841476464"
+        },
+        {
+          "file": "playwright-merge.config.ts",
+          "hash": "12848520169129735462"
+        },
+        {
+          "file": "pnpm-lock.yaml",
+          "hash": "1611088183838004832"
+        },
+        {
+          "file": "pnpm-workspace.yaml",
+          "hash": "12120347487024552720"
+        },
+        {
+          "file": "scripts/analyse_unused_exports.ts",
+          "hash": "18317803970771666155"
+        },
+        {
+          "file": "scripts/docker-link-repos.sh",
+          "hash": "14045336774200613607"
+        },
+        {
+          "file": "scripts/docker-package.sh",
+          "hash": "7984694385806698273"
+        },
+        {
+          "file": "scripts/fetchdep.sh",
+          "hash": "914594896729278072"
+        },
+        {
+          "file": "scripts/gen-workflow-mermaid.ts",
+          "hash": "17552846847923693585"
+        },
+        {
+          "file": "scripts/get-version-from-git.sh",
+          "hash": "6097669992060973935"
+        },
+        {
+          "file": "scripts/issues-burndown.pl",
+          "hash": "238946697653531486"
+        },
+        {
+          "file": "scripts/issues-no-state.pl",
+          "hash": "14460636774576620904"
+        },
+        {
+          "file": "scripts/layered.sh",
+          "hash": "11788785928137098681"
+        },
+        {
+          "file": "scripts/normalize-version.sh",
+          "hash": "18120967594742439696"
+        },
+        {
+          "file": "scripts/pnpm-link.ts",
+          "hash": "2089009016919722930"
+        },
+        {
+          "file": "vitest.config.ts",
+          "hash": "16890243860362386917"
+        }
+      ],
+      "@element-hq/element-web-module-restricted-guests": [
+        {
+          "file": "modules/restricted-guests/README.md",
+          "hash": "7020178796490182836"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/restricted-guests.spec.ts",
+          "hash": "14618490508218958440"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/services.ts",
+          "hash": "3772561486524636922"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/dialog-linux.png",
+          "hash": "10420422079998034458"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/dialog-login-linux.png",
+          "hash": "487715749655762618"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/login-legacy-linux.png",
+          "hash": "10275326093702428654"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/login-mas-linux.png",
+          "hash": "17784184269655070879"
+        },
+        {
+          "file": "modules/restricted-guests/e2e/snapshots/restricted-guests.spec.ts/preview-bar-linux.png",
+          "hash": "13397638648334569594"
+        },
+        {
+          "file": "modules/restricted-guests/package.json",
+          "hash": "2024773328490681461",
+          "deps": [
+            "npm:@arcmantle/vite-plugin-import-css-sheet",
+            "@element-hq/element-web-module-api",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@vitejs/plugin-react",
+            "npm:react",
+            "npm:testcontainers",
+            "npm:typescript",
+            "npm:vite@8.0.16",
+            "npm:vite-plugin-node-polyfills",
+            "npm:@vector-im/compound-design-tokens@10.2.2",
+            "npm:@vector-im/compound-web@9.7.1",
+            "npm:styled-components",
+            "npm:zod@4.4.3"
+          ]
+        },
+        {
+          "file": "modules/restricted-guests/project.json",
+          "hash": "194344232513800742"
+        },
+        {
+          "file": "modules/restricted-guests/src/AuthFooter.tsx",
+          "hash": "13893033403201705941"
+        },
+        {
+          "file": "modules/restricted-guests/src/RegisterDialog.tsx",
+          "hash": "2685094817128245927"
+        },
+        {
+          "file": "modules/restricted-guests/src/RoomPreviewBar.tsx",
+          "hash": "10653672084165358508"
+        },
+        {
+          "file": "modules/restricted-guests/src/config.ts",
+          "hash": "17439690912911319389"
+        },
+        {
+          "file": "modules/restricted-guests/src/index.tsx",
+          "hash": "8849673572080454150"
+        },
+        {
+          "file": "modules/restricted-guests/src/translations.json",
+          "hash": "5076242660355636100"
+        },
+        {
+          "file": "modules/restricted-guests/src/vite-env.d.ts",
+          "hash": "7467359864712285783"
+        },
+        {
+          "file": "modules/restricted-guests/tsconfig.json",
+          "hash": "5995487147018214856"
+        },
+        {
+          "file": "modules/restricted-guests/vite.config.ts",
+          "hash": "5297883787162306397"
+        }
+      ],
+      "@element-hq/element-web-module-widget-toggle": [
+        {
+          "file": "modules/widget-toggles/README.md",
+          "hash": "9691190802049262869"
+        },
+        {
+          "file": "modules/widget-toggles/e2e/fixture/widget.html",
+          "hash": "13021655528630336920"
+        },
+        {
+          "file": "modules/widget-toggles/e2e/snapshots/widget-toggles.spec.ts/widget-toggle-button-default-icon-linux.png",
+          "hash": "4447337200188099381"
+        },
+        {
+          "file": "modules/widget-toggles/e2e/widget-toggles.spec.ts",
+          "hash": "2826046303489449735"
+        },
+        {
+          "file": "modules/widget-toggles/package.json",
+          "hash": "12526321087584310730",
+          "deps": [
+            "npm:@arcmantle/vite-plugin-import-css-sheet",
+            "@element-hq/element-web-module-api",
+            "npm:@testing-library/dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/user-event",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/browser-playwright",
+            "npm:react",
+            "npm:typescript",
+            "npm:vite@8.0.16",
+            "npm:vite-plugin-node-polyfills",
+            "npm:vite-plugin-svgr",
+            "npm:vitest",
+            "npm:@vector-im/compound-design-tokens@10.2.2",
+            "npm:@vector-im/compound-web@9.7.1",
+            "npm:matrix-widget-api",
+            "npm:styled-components",
+            "npm:zod@4.4.3"
+          ]
+        },
+        {
+          "file": "modules/widget-toggles/project.json",
+          "hash": "5317597327175169738"
+        },
+        {
+          "file": "modules/widget-toggles/src/config.test.ts",
+          "hash": "5630017996241325422"
+        },
+        {
+          "file": "modules/widget-toggles/src/config.ts",
+          "hash": "6222229260028560996"
+        },
+        {
+          "file": "modules/widget-toggles/src/index.test.ts",
+          "hash": "1304403849104167765"
+        },
+        {
+          "file": "modules/widget-toggles/src/index.tsx",
+          "hash": "3326905838201365508"
+        },
+        {
+          "file": "modules/widget-toggles/src/tests/mocks.ts",
+          "hash": "18262528215664740336"
+        },
+        {
+          "file": "modules/widget-toggles/src/tests/setupTests.ts",
+          "hash": "9960444596565998832"
+        },
+        {
+          "file": "modules/widget-toggles/src/toggle.test.tsx",
+          "hash": "16154416789947245887"
+        },
+        {
+          "file": "modules/widget-toggles/src/toggle.tsx",
+          "hash": "6583812670676225409"
+        },
+        {
+          "file": "modules/widget-toggles/tsconfig.json",
+          "hash": "5995487147018214856"
+        },
+        {
+          "file": "modules/widget-toggles/vite.config.ts",
+          "hash": "4662856107333730671"
+        },
+        {
+          "file": "modules/widget-toggles/vitest.config.ts",
+          "hash": "6345085472565385871"
+        }
+      ],
+      "element-web-modules": [
+        {
+          "file": "modules/.dockerignore",
+          "hash": "1246118994462859873"
+        },
+        {
+          "file": "modules/.eslintrc.cjs",
+          "hash": "10088727841207637550"
+        },
+        {
+          "file": "modules/.gitignore",
+          "hash": "6572404006969856788"
+        },
+        {
+          "file": "modules/.lintstagedrc",
+          "hash": "17925430476219898751"
+        },
+        {
+          "file": "modules/Dockerfile",
+          "hash": "16187961024713748768"
+        },
+        {
+          "file": "modules/README.md",
+          "hash": "4168756847263865858"
+        },
+        {
+          "file": "modules/package.json",
+          "hash": "14563524719831199582",
+          "deps": [
+            "@element-hq/element-web-playwright-common",
+            "npm:eslint",
+            "npm:eslint-config-google",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-matrix-org",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-compiler@19.1.0-rc.2",
+            "npm:eslint-plugin-unicorn"
+          ]
+        },
+        {
+          "file": "modules/playwright.config.ts",
+          "hash": "15838666102596260417"
+        },
+        {
+          "file": "modules/playwright/element-web-test.ts",
+          "hash": "7713454969632273231"
+        },
+        {
+          "file": "modules/project.json",
+          "hash": "707399733293975"
+        },
+        {
+          "file": "modules/tsconfig.json",
+          "hash": "17341369138326436045"
+        }
+      ],
+      "@element-hq/element-web-module-banner": [
+        {
+          "file": "modules/banner/README.md",
+          "hash": "18402335758370496821"
+        },
+        {
+          "file": "modules/banner/e2e/banner.spec.ts",
+          "hash": "18101876557725470007"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/app1.png",
+          "hash": "14976833407114004037"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/app2.png",
+          "hash": "15564603690407808824"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/logo.svg",
+          "hash": "12555679049467332358"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/navigation.json",
+          "hash": "3438981683221208644"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app1.svg",
+          "hash": "4475330493142400579"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app10.svg",
+          "hash": "8716291269303893691"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app11.svg",
+          "hash": "17361724361553599535"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app2.svg",
+          "hash": "8069187129075921961"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app3.svg",
+          "hash": "10426776796364360449"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app4.svg",
+          "hash": "3921724316842808012"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app5.svg",
+          "hash": "16185506427797419105"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app6.svg",
+          "hash": "14344009002599440119"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app7.svg",
+          "hash": "1189813352581786393"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app8.svg",
+          "hash": "4251541613909422536"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/app9.svg",
+          "hash": "18022354593576250291"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/logofull.svg",
+          "hash": "11724630071457955182"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/opendesk/logomark.svg",
+          "hash": "1955005533257101596"
+        },
+        {
+          "file": "modules/banner/e2e/fixture/silent/index.html",
+          "hash": "3673108920611640699"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-static-config-should-render-1-linux.aria.yml",
+          "hash": "13887579754196691144"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-static-config-should-render-2-linux.aria.yml",
+          "hash": "115732256523509232"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-univention-config-should-render-1-linux.aria.yml",
+          "hash": "13887579754196691144"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/Banner-univention-config-should-render-2-linux.aria.yml",
+          "hash": "4358783135268320523"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-menu-linux.png",
+          "hash": "13392845307340010881"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-nav-hover-linux.png",
+          "hash": "131916974257398279"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/static-nav-linux.png",
+          "hash": "4887454254120052363"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-error-linux.png",
+          "hash": "15118489810827861738"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-menu-linux.png",
+          "hash": "14222780945472489906"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-menu-loading-linux.png",
+          "hash": "12349556703431124293"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-nav-hover-linux.png",
+          "hash": "3641419696615569179"
+        },
+        {
+          "file": "modules/banner/e2e/snapshots/banner.spec.ts/univention-nav-linux.png",
+          "hash": "2520390245133381136"
+        },
+        {
+          "file": "modules/banner/package.json",
+          "hash": "13351113424930707054",
+          "deps": [
+            "npm:@arcmantle/vite-plugin-import-css-sheet",
+            "@element-hq/element-web-module-api",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:matrix-web-i18n",
+            "npm:matrix-widget-api",
+            "npm:react",
+            "npm:typescript",
+            "npm:vite@8.0.16",
+            "npm:vite-plugin-node-polyfills",
+            "npm:vite-plugin-svgr",
+            "npm:@radix-ui/react-dialog",
+            "npm:@vector-im/compound-design-tokens@10.2.2",
+            "npm:@vector-im/compound-web@9.7.1",
+            "npm:framer-motion",
+            "npm:styled-components",
+            "npm:zod@4.4.3"
+          ]
+        },
+        {
+          "file": "modules/banner/project.json",
+          "hash": "1203461843366005131"
+        },
+        {
+          "file": "modules/banner/src/Banner.tsx",
+          "hash": "3743617204627419456"
+        },
+        {
+          "file": "modules/banner/src/Logo.tsx",
+          "hash": "7538858872393240708"
+        },
+        {
+          "file": "modules/banner/src/Menu.tsx",
+          "hash": "8344848640154894072"
+        },
+        {
+          "file": "modules/banner/src/Univention/Menu.tsx",
+          "hash": "10809738779895452991"
+        },
+        {
+          "file": "modules/banner/src/Univention/SilentLogin.tsx",
+          "hash": "2039111229434222407"
+        },
+        {
+          "file": "modules/banner/src/Univention/navigation.ts",
+          "hash": "5121161836194484705"
+        },
+        {
+          "file": "modules/banner/src/config.ts",
+          "hash": "11961486043317574261"
+        },
+        {
+          "file": "modules/banner/src/index.tsx",
+          "hash": "10383762943164268001"
+        },
+        {
+          "file": "modules/banner/src/style.css",
+          "hash": "16873831179598430618"
+        },
+        {
+          "file": "modules/banner/src/theme.ts",
+          "hash": "8985488101946804879"
+        },
+        {
+          "file": "modules/banner/src/translations.json",
+          "hash": "12622055701380158318"
+        },
+        {
+          "file": "modules/banner/src/trigger.svg",
+          "hash": "9635768152710437249"
+        },
+        {
+          "file": "modules/banner/src/vite-env.d.ts",
+          "hash": "12920009744814808043"
+        },
+        {
+          "file": "modules/banner/tsconfig.json",
+          "hash": "5995487147018214856"
+        },
+        {
+          "file": "modules/banner/vite.config.ts",
+          "hash": "8293379944023176594"
+        }
+      ],
+      "@element-hq/element-web-playwright-common": [
+        {
+          "file": "packages/playwright-common/.gitignore",
+          "hash": "2275029701022766730"
+        },
+        {
+          "file": "packages/playwright-common/Dockerfile",
+          "hash": "18297597943287111760"
+        },
+        {
+          "file": "packages/playwright-common/README.md",
+          "hash": "16409203769353832833"
+        },
+        {
+          "file": "packages/playwright-common/docker-entrypoint.sh",
+          "hash": "10527636811907052555"
+        },
+        {
+          "file": "packages/playwright-common/package.json",
+          "hash": "9628476482047101404",
+          "deps": [
+            "@element-hq/element-web-module-api",
+            "npm:@playwright/test",
+            "npm:playwright-core",
+            "npm:@types/lodash-es",
+            "npm:typescript",
+            "npm:@axe-core/playwright",
+            "npm:@testcontainers/postgresql",
+            "npm:glob@13.0.6",
+            "npm:lodash-es",
+            "npm:mailpit-api",
+            "npm:strip-ansi@7.2.0",
+            "npm:testcontainers",
+            "npm:wait-on",
+            "npm:yaml"
+          ]
+        },
+        {
+          "file": "packages/playwright-common/playwright-screenshots.sh",
+          "hash": "4625338379924853974"
+        },
+        {
+          "file": "packages/playwright-common/project.json",
+          "hash": "13430239277134373538"
+        },
+        {
+          "file": "packages/playwright-common/src/expect/axe.ts",
+          "hash": "10469418961831303636"
+        },
+        {
+          "file": "packages/playwright-common/src/expect/index.ts",
+          "hash": "11458559438792645616"
+        },
+        {
+          "file": "packages/playwright-common/src/expect/screenshot.ts",
+          "hash": "4861625970983440219"
+        },
+        {
+          "file": "packages/playwright-common/src/fixtures/axe.ts",
+          "hash": "12288922371590491938"
+        },
+        {
+          "file": "packages/playwright-common/src/fixtures/index.ts",
+          "hash": "6001866791131429796"
+        },
+        {
+          "file": "packages/playwright-common/src/fixtures/panel.ts",
+          "hash": "17137621377739182122"
+        },
+        {
+          "file": "packages/playwright-common/src/fixtures/services.ts",
+          "hash": "14566090823411574440"
+        },
+        {
+          "file": "packages/playwright-common/src/fixtures/user.ts",
+          "hash": "5230166991386776669"
+        },
+        {
+          "file": "packages/playwright-common/src/flaky-reporter.ts",
+          "hash": "8276611570205100661"
+        },
+        {
+          "file": "packages/playwright-common/src/index.ts",
+          "hash": "13440133905447803428"
+        },
+        {
+          "file": "packages/playwright-common/src/stale-screenshot-reporter.ts",
+          "hash": "18128214757638389681"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/HomeserverContainer.ts",
+          "hash": "9463024707886798431"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/index.ts",
+          "hash": "7594886755780728581"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/mailpit.ts",
+          "hash": "12689100885591269545"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/mas-config.ts",
+          "hash": "6089801285160304403"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/mas.ts",
+          "hash": "4174586098897539126"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/postgres.ts",
+          "hash": "17201425285774350591"
+        },
+        {
+          "file": "packages/playwright-common/src/testcontainers/synapse.ts",
+          "hash": "11330661150225122952"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/api.ts",
+          "hash": "12350849025368230712"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/config_json.ts",
+          "hash": "9276695282003350765"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/context.ts",
+          "hash": "6955291262923993576"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/logger.ts",
+          "hash": "9810367867420219568"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/object.ts",
+          "hash": "4844813815018750356"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/port.ts",
+          "hash": "10401676122978471174"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/rand.ts",
+          "hash": "12646777455254654863"
+        },
+        {
+          "file": "packages/playwright-common/src/utils/toasts.ts",
+          "hash": "10733347492681198351"
+        },
+        {
+          "file": "packages/playwright-common/tsconfig.json",
+          "hash": "2167356415048078818"
+        }
+      ],
+      "@element-hq/element-web-module-api": [
+        {
+          "file": "packages/module-api/.gitignore",
+          "hash": "3365683188059852574"
+        },
+        {
+          "file": "packages/module-api/Dockerfile",
+          "hash": "782080374534490800"
+        },
+        {
+          "file": "packages/module-api/README.md",
+          "hash": "16424897497576939655"
+        },
+        {
+          "file": "packages/module-api/api-extractor.json",
+          "hash": "7651845631386741035"
+        },
+        {
+          "file": "packages/module-api/element-web-module-api.api.md",
+          "hash": "8350404651499441538"
+        },
+        {
+          "file": "packages/module-api/package.json",
+          "hash": "2551807674366341066",
+          "deps": [
+            "npm:@matrix-org/react-sdk-module-api",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:matrix-web-i18n",
+            "npm:matrix-widget-api",
+            "npm:react",
+            "npm:@microsoft/api-extractor",
+            "npm:@types/node",
+            "npm:@types/semver",
+            "npm:rollup-plugin-external-globals",
+            "npm:semver@7.8.5",
+            "npm:typescript",
+            "npm:unplugin-dts",
+            "npm:vite@8.0.16",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "packages/module-api/project.json",
+          "hash": "2567274207145480287"
+        },
+        {
+          "file": "packages/module-api/src/@types/global.d.ts",
+          "hash": "5219004762638989533"
+        },
+        {
+          "file": "packages/module-api/src/api/auth.ts",
+          "hash": "11842131573118408207"
+        },
+        {
+          "file": "packages/module-api/src/api/builtins.ts",
+          "hash": "16714627712271635643"
+        },
+        {
+          "file": "packages/module-api/src/api/client.ts",
+          "hash": "7501536707893597522"
+        },
+        {
+          "file": "packages/module-api/src/api/composer.ts",
+          "hash": "9094483704249381888"
+        },
+        {
+          "file": "packages/module-api/src/api/config.ts",
+          "hash": "2723139322360144968"
+        },
+        {
+          "file": "packages/module-api/src/api/custom-components.ts",
+          "hash": "5534314172997112879"
+        },
+        {
+          "file": "packages/module-api/src/api/customisations.ts",
+          "hash": "15255322734186356638"
+        },
+        {
+          "file": "packages/module-api/src/api/dialog.ts",
+          "hash": "11040211598681764674"
+        },
+        {
+          "file": "packages/module-api/src/api/extras.ts",
+          "hash": "16093390870273204527"
+        },
+        {
+          "file": "packages/module-api/src/api/i18n.ts",
+          "hash": "10284049554516903401"
+        },
+        {
+          "file": "packages/module-api/src/api/index.test.ts",
+          "hash": "2954508285626170060"
+        },
+        {
+          "file": "packages/module-api/src/api/index.ts",
+          "hash": "1852477752159617435"
+        },
+        {
+          "file": "packages/module-api/src/api/legacy-customisations.ts",
+          "hash": "10976026668687038514"
+        },
+        {
+          "file": "packages/module-api/src/api/legacy-modules.ts",
+          "hash": "11512373917530608531"
+        },
+        {
+          "file": "packages/module-api/src/api/navigation.ts",
+          "hash": "10585671289399425586"
+        },
+        {
+          "file": "packages/module-api/src/api/profile.ts",
+          "hash": "17520928434600675742"
+        },
+        {
+          "file": "packages/module-api/src/api/stores.ts",
+          "hash": "5432692603446449204"
+        },
+        {
+          "file": "packages/module-api/src/api/watchable.test.ts",
+          "hash": "5196925398017620210"
+        },
+        {
+          "file": "packages/module-api/src/api/watchable.ts",
+          "hash": "13814313835028575572"
+        },
+        {
+          "file": "packages/module-api/src/api/widget-lifecycle.ts",
+          "hash": "13678843045061239340"
+        },
+        {
+          "file": "packages/module-api/src/api/widget.ts",
+          "hash": "17622668592135348695"
+        },
+        {
+          "file": "packages/module-api/src/index.ts",
+          "hash": "14841803528390719368"
+        },
+        {
+          "file": "packages/module-api/src/loader.test.ts",
+          "hash": "11624462004119455667"
+        },
+        {
+          "file": "packages/module-api/src/loader.ts",
+          "hash": "12510607514902674119"
+        },
+        {
+          "file": "packages/module-api/src/models/Room.ts",
+          "hash": "14762924178965000841"
+        },
+        {
+          "file": "packages/module-api/src/models/event.ts",
+          "hash": "1620800555992818595"
+        },
+        {
+          "file": "packages/module-api/src/utils.ts",
+          "hash": "7610454763734892695"
+        },
+        {
+          "file": "packages/module-api/tsconfig.json",
+          "hash": "476161937673831674"
+        },
+        {
+          "file": "packages/module-api/vite.base.ts",
+          "hash": "16584114607365193022"
+        },
+        {
+          "file": "packages/module-api/vite.config.ts",
+          "hash": "14228593587426097120"
+        },
+        {
+          "file": "packages/module-api/vitest.config.ts",
+          "hash": "11724645626928706655"
         }
       ]
     }

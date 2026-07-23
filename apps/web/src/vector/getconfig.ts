@@ -5,6 +5,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Com
 Please see LICENSE files in the repository root for full details.
 */
 
+import { logger } from "matrix-js-sdk/src/logger";
+
 import type { IConfigOptions } from "../IConfigOptions";
 
 // Load the config file. First try to load up a domain-specific config of the
@@ -49,6 +51,18 @@ async function getConfig(configJsonFilename: string): Promise<IConfigOptions | u
     }
 
     if (res.ok) {
-        return res.json();
+        const text = await res.text();
+        try {
+            return JSON.parse(text);
+        } catch (e) {
+            // Config served by deployment tooling (e.g. a Kubernetes ConfigMap or
+            // envsubst/sed injection) can contain illegal ASCII control characters
+            // (U+0000–U+001F) inside string literals, which JSON.parse rejects with
+            // "Bad control character in string literal". Strip them and retry so a
+            // slightly corrupted config does not take the whole app down.
+            logger.warn("Config contained illegal control characters; sanitising and retrying", e);
+            const sanitized = text.replace(/[\u0000-\u001f]/g, "");
+            return JSON.parse(sanitized);
+        }
     }
 }

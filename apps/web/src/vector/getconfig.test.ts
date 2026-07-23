@@ -103,4 +103,13 @@ describe("getVectorConfig()", () => {
         // https://github.com/wheresrhys/fetch-mock/issues/270
         await expect(getVectorConfig()).rejects.toThrow("in JSON at position 19");
     });
+
+    it("sanitises illegal control characters injected into string literals", async () => {
+        fetchMock.getOnce("express:/config.app.element.io.json", { throws: "err-specific" });
+        // A stray tab (U+0009) inside a string literal, as injected by some CI/CD
+        // tooling, makes JSON.parse throw "Bad control character in string literal".
+        fetchMock.getOnce("express:/config.json", '{"brand": "gene\tral"}');
+
+        await expect(getVectorConfig()).resolves.toEqual({ brand: "general" });
+    });
 });

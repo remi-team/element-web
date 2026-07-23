@@ -1,8 +1,0 @@
-> nx run element-web:prebuild:rethemendex
-
-> pnpm run rethemendex
-
-
-> element-web@1.12.21 rethemendex /Users/Zhuanz/Documents/www.workspace/remi/element-web/apps/web
-> sh ./res/css/rethemendex.sh
-
