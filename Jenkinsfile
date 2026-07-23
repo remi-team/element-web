@@ -90,9 +90,6 @@ pipeline {
                         docker build \
                             -f apps/web/Dockerfile \
                             -t ${FULL_IMAGE_NAME} \
-                            --build-arg USE_CUSTOM_SDKS=false \
-                            --build-arg JS_SDK_REPO="https://github.com/matrix-org/matrix-js-sdk.git" \
-                            --build-arg JS_SDK_BRANCH="master" \
                             .
                     """
 
