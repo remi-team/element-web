@@ -13,11 +13,7 @@ pipeline {
     }
 
     parameters {
-        string(
-            name: 'BRANCH_NAME',
-            defaultValue: 'main',
-            description: '构建分支，例如 main / develop / feature/xxx'
-        )
+        string(name: 'BRANCH_NAME', defaultValue: env.BRANCH_NAME ?: '', description: '构建分支')
         choice(
             name: 'DEPLOY_TARGET',
             choices: ['sit'],
