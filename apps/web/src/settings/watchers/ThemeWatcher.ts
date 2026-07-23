@@ -13,7 +13,7 @@ import { TypedEventEmitter } from "matrix-js-sdk/src/matrix";
 import SettingsStore from "../SettingsStore";
 import dis from "../../dispatcher/dispatcher";
 import { Action } from "../../dispatcher/actions";
-import { findHighContrastTheme, getCustomTheme } from "../../theme";
+import { findHighContrastTheme, getCustomTheme, resolveThemeVariant } from "../../theme";
 import { type ActionPayload } from "../../dispatcher/payloads";
 import { SettingLevel } from "../SettingLevel";
 
@@ -149,6 +149,17 @@ export default class ThemeWatcher extends TypedEventEmitter<ThemeWatcherEvent, T
                 newTheme = hcTheme;
             }
         }
+
+        // Resolve custom theme variant based on system dark mode preference
+        // This enables automatic light/dark switching for paired custom themes
+        const themeExplicit = SettingsStore.getValueAt(SettingLevel.DEVICE, "theme", null, false, true);
+        if (themeExplicit && themeExplicit.startsWith("custom-")) {
+            const resolved = resolveThemeVariant(themeExplicit, this.preferDark.matches);
+            if (resolved !== themeExplicit) {
+                return resolved;
+            }
+        }
+
         return newTheme;
     }
 

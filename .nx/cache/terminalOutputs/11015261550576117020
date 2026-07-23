@@ -1,0 +1,159 @@
+> webpack-dev-server --output-path webapp --output-filename=bundles/_dev_/[name].js --output-chunk-filename=bundles/_dev_/[name].js --mode development
+
+(node:9176) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+◇ injected env (0) from .env [2m// tip: ⌘ enable debugging { debug: true }[0m
+<i> [1m[32m[webpack-dev-server] Project is running at:[39m[22m
+<i> [1m[32m[webpack-dev-server] Loopback: [36mhttp://localhost:8080/[32m, [36mhttp://[::1]:8080/[32m[39m[22m
+<i> [1m[32m[webpack-dev-server] On Your Network (IPv4): [36mhttp://192.168.3.24:8080/[32m[39m[22m
+<i> [1m[32m[webpack-dev-server] Content not from webpack is served from '[36m./webapp[32m' directory[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /[39m[22m
+595 assets
+4243 modules
+
+[1m[31mERROR[39m[22m in [1m../../packages/shared-components/dist/element-web-shared-components.css[39m[22m [1m[32m/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist/element-web-shared-components.css.webpack[javascript/auto]!=!!!/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/css-loader@7.1.4_webpack@5.108.4/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/postcss-loader@8.2.1_postcss@8.5.15_typescript@6.0.3_webpack@5.108.4/node_modules/postcss-loader/dist/cjs.js??postcss!/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist/element-web-shared-components.css[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist/element-web-shared-components.css' in '/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m../../packages/shared-components/dist/element-web-shared-components.css[39m[22m
+[1mModule build [1m[31mfailed[39m[22m[1m (from ../../node_modules/.pnpm/mini-css-extract-plugin@2.10.2_webpack@5.108.4/node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleNotFoundError: Module [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist/element-web-shared-components.css' in '/Users/Zhuanz/Documents/www.workspace/remi/element-web/packages/shared-components/dist'
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/Compilation.js:2251:28
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:1092:13
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:10:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:476:22
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:658:22
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:195:10
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:933:25
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:1178:8
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:1308:5
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/neo-async@2.6.2/node_modules/neo-async/async.js:6883:13
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/webpack@5.108.4_esbuild@0.27.4_lightningcss@1.32.0_postcss@8.5.15_webpack-cli@7.2.1/node_modules/webpack/lib/NormalModuleFactory.js:1291:45
+    at finishWithoutResolve (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:955:11)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1048:13
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at aliasResolveHandler (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/AliasUtils.js:194:36)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/AliasPlugin.js:53:5
+    at _next0 (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:8:1)
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:30:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:94:43
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/Resolver.js:1132:5
+    at eval (eval at create (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/tapable@2.3.3/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)
+    at /Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js:52:15
+    at runDispatch (/Users/Zhuanz/Documents/www.workspace/remi/element-web/node_modules/.pnpm/enhanced-resolve@5.24.2/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:100:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)[39m[22m
+
+webpack 5.108.4 compiled with [1m[31m2 errors[39m[22m in 12114 ms
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /.well-known/appspecific/com.chrome.devtools.json[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /bundles/544aa2998aaeb9e8b720/bundle.css[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /bundles/_dev_/bundle.js[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /manifest.json[39m[22m
+624 assets
+3893 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1143 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1683 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1965 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1616 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1556 ms
+624 assets
+3915 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 2414 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1795 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 2292 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 2250 ms
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /serviceworker.2e7ff4a20c10145661af.hot-update.json[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /bundle.2e7ff4a20c10145661af.hot-update.json[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /sw.js[39m[22m
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1528 ms
+594 assets
+3884 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 830 ms
+594 assets
+3884 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 568 ms
+594 assets
+3884 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 705 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1622 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1948 ms
+624 assets
+3950 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 5029 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1628 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1714 ms
+594 assets
+3884 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 799 ms
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /sw.js[39m[22m
+624 assets
+3950 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 4868 ms
+624 assets
+3950 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 5209 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1748 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1570 ms
+624 assets
+3950 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 5028 ms
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /serviceworker.966dadde20985332b243.hot-update.json[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /bundle.966dadde20985332b243.hot-update.json[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /[39m[22m
+<i> [1m[32m[webpack-dev-middleware] wait until bundle finished: /sw.js[39m[22m
+624 assets
+3915 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1960 ms
+624 assets
+3950 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 5082 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1543 ms
+624 assets
+3908 modules
+webpack 5.108.4 compiled [1m[32msuccessfully[39m[22m in 1522 ms
+<i> [1m[32m[webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...[39m[22m

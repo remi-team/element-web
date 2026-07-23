@@ -27,11 +27,7 @@ export enum WidgetMessagingStoreEvent {
  * easiest to split this into a single place.
  */
 export class WidgetMessagingStore extends AsyncStoreWithClient<EmptyObject> {
-    private static readonly internalInstance = (() => {
-        const instance = new WidgetMessagingStore();
-        instance.start();
-        return instance;
-    })();
+    private static internalInstance: WidgetMessagingStore;
 
     private widgetMap = new EnhancedMap<string, WidgetMessaging>(); // <widget UID, messaging>
 
@@ -40,6 +36,10 @@ export class WidgetMessagingStore extends AsyncStoreWithClient<EmptyObject> {
     }
 
     public static get instance(): WidgetMessagingStore {
+        if (!WidgetMessagingStore.internalInstance) {
+            WidgetMessagingStore.internalInstance = new WidgetMessagingStore();
+            WidgetMessagingStore.internalInstance.start();
+        }
         return WidgetMessagingStore.internalInstance;
     }
 

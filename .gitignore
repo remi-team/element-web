@@ -2,6 +2,7 @@
 # Dependencies
 # ========================
 node_modules/
+docs/zh-CN/
 .pnpm-store/
 .yarn/cache/
 .yarn/unplugged/
@@ -78,3 +79,4 @@ yarn-error.log*
 tmp/
 .webpack/
 webpack-stats.json
+upload/

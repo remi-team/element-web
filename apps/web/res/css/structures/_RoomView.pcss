@@ -12,7 +12,12 @@ Please see LICENSE files in the repository root for full details.
 
 .mx_LeftPanel_panel {
     .mx_RoomView_wrapper {
-        height: 100%;
+        height: calc(100% - 16px);
+        margin:8px;
+        background-color: var(--roomView-background-color, #FFFFFF) !important;
+        border-radius: 12px;
+        -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 }
 

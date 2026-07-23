@@ -1,0 +1,344 @@
+/*
+Copyright 2024 New Vector Ltd.
+Copyright 2019 The Matrix.org Foundation C.I.C.
+
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+Please see LICENSE files in the repository root for full details.
+*/
+
+$font-family: var(--font-family, $font-family);
+$monospace-font-family: var(--font-family-monospace, $monospace-font-family);
+
+/* Colors from Figma Compound https://www.figma.com/file/X4XTH9iS2KGJ2wFKDqkyed/Compound?node-id=559%3A741 */
+$accent: var(--accent-color, $accent);
+$alert: var(--alert, $alert);
+$links: var(--links, $links);
+$primary-content: var(--primary-content, $primary-content);
+$secondary-content: var(--secondary-content, $secondary-content);
+$tertiary-content: var(--tertiary-content, $tertiary-content);
+$quaternary-content: var(--quaternary-content, $quaternary-content);
+$quinary-content: var(--quinary-content, $quinary-content);
+$system: var(--system, $system);
+$system-transparent: var(--system-transparent, #e1e6ec00);
+$background: var(--background, $background);
+$panels: var(--panels, var(--cpd-color-gray-600));
+$panel-actions: var(--panels-actions, var(--cpd-color-gray-300));
+
+/* --timeline-background-color */
+$custom-theme-background: var(--timeline-background-color, var(--cpd-color-bg-canvas-default));
+$button-secondary-bg-color: $custom-theme-background;
+$lightbox-border-color: $custom-theme-background;
+$menu-bg-color: $custom-theme-background;
+$message-action-bar-bg-color: $custom-theme-background;
+$background: $custom-theme-background;
+$togglesw-ball-color: var(--cpd-color-bg-action-primary-rest);
+$togglesw-off-color: var(--togglesw-off-color);
+$droptarget-bg-color: var(--timeline-background-color-50pct);
+$authpage-modal-bg-color: var(--timeline-background-color-50pct);
+$roomheader-bg-color: $custom-theme-background;
+
+/* --roomlist-highlights-color */
+$panel-actions: var(--roomlist-highlights-color);
+
+/* --sidebar-color */
+$spacePanel-bg-color: var(--sidebar-color);
+$tooltip-timeline-bg-color: var(--sidebar-color);
+$dialog-backdrop-color: var(--sidebar-color-50pct);
+
+/* --roomlist-background-color */
+$header-panel-bg-color: var(--roomlist-background-color);
+$header-panel-bg-hover: var(--cpd-color-bg-action-secondary-hovered);
+$panel-gradient: var(--roomlist-background-color-0pct), var(--roomlist-background-color);
+$dark-panel-bg-color: var(--roomlist-background-color);
+$input-lighter-bg-color: var(--roomlist-background-color);
+$secondary-accent-color: var(--roomlist-background-color);
+$selected-color: var(--roomlist-background-color);
+$widget-menu-bar-bg-color: var(--roomlist-background-color);
+$roomlist-bg-color: var(--roomlist-background-color);
+
+/* --timeline-text-color */
+$message-action-bar-fg-color: var(--timeline-text-color);
+$primary-content: var(--timeline-text-color);
+$roomtopic-color: var(--timeline-text-color-50pct);
+$topleftmenu-color: var(--timeline-text-color);
+$dialog-title-fg-color: var(--timeline-text-color);
+$authpage-lang-color: var(--timeline-text-color);
+$authpage-primary-color: var(--timeline-text-color);
+
+/* --roomlist-text-secondary-color */
+$roomtile-default-badge-bg-color: var(--roomlist-text-secondary-color);
+
+/* --roomlist-separator-color */
+$input-darker-bg-color: var(--roomlist-separator-color);
+$primary-hairline-color: var(--roomlist-separator-color);
+$secondary-hairline-color: var(--secondary-hairline-color);
+
+/* --timeline-text-secondary-color */
+$authpage-secondary-color: var(--timeline-text-secondary-color);
+$pinned-color: var(--timeline-text-secondary-color);
+$settings-subsection-fg-color: var(--timeline-text-secondary-color);
+$roomheader-addroom-bg-color: var(--timeline-text-secondary-color);
+$light-fg-color: var(--timeline-text-secondary-color);
+$focus-bg-color: var(--focus-bg-color, $focus-bg-color);
+$room-highlight-color: var(--room-highlight-color);
+
+$rte-room-pill-color: $room-highlight-color;
+
+$info-plinth-fg-color: var(--timeline-text-secondary-color);
+
+/* --primary-color */
+$accent-alt: var(--primary-color);
+
+/* --warning-color */
+$button-danger-disabled-bg-color: var(--warning-color-50pct);
+
+/* --timeline-highlights-color */
+$event-selected-color: var(--timeline-highlights-color);
+$event-highlight-bg-color: var(--timeline-highlights-color);
+
+$settings-grey-fg-color: $primary-content;
+
+/* Tabbed views - active tab text color for dark theme */
+$tab-label-active-fg-color: $primary-content;
+
+/* --eventbubble colors */
+$eventbubble-self-bg: var(--eventbubble-self-bg, $eventbubble-self-bg);
+$eventbubble-others-bg: var(--eventbubble-others-bg, $eventbubble-others-bg);
+$eventbubble-bg-hover: var(--eventbubble-bg-hover, $eventbubble-bg-hover);
+
+/* Override bubble colors for dark theme */
+:root {
+    --eventbubble-others-bg: #252830;
+    --eventbubble-text-color: #C9CDD4;
+}
+
+$reaction-row-button-selected-bg-color: var(
+    --reaction-row-button-selected-bg-color,
+    $reaction-row-button-selected-bg-color
+);
+
+$menu-selected-color: var(--menu-selected-color, $menu-selected-color);
+$pill-bg-color: var(--other-user-pill-bg-color, $pill-bg-color);
+$pill-hover-bg-color: var(--other-user-pill-bg-color, $pill-hover-bg-color);
+$pill-press-bg-color: var(--other-user-pill-bg-color, $pill-press-bg-color);
+$icon-button-color: var(--icon-button-color, $icon-button-color);
+
+$strong-input-border-color: var(--strong-input-border-color, $strong-input-border-color);
+$inverted-bg-color: var(--strong-input-border-color, $inverted-bg-color);
+
+/**
+ * Variation of the accent color.
+ * Generate this colour scale using LeonardoColor
+ */
+$accent-100: var(--accent-color-100);
+$accent-200: var(--accent-color-200);
+$accent-300: var(--accent-color-300);
+$accent-400: var(--accent-color-400);
+$accent-500: var(--accent-color-500);
+$accent-600: var(--accent-color-600);
+$accent-700: var(--accent-color-700);
+$accent-800: var(--accent-color-800);
+$accent-900: var(--accent-color-900);
+$accent-1000: var(--accent-color-1000);
+$accent-1100: var(--accent-color-1100);
+$accent-1200: var(--accent-color-1200);
+$accent-1300: var(--accent-color-1300);
+$accent-1400: var(--accent-color-1400);
+
+/* ========================================================================
+ * Dialog Customization
+ * Based on UI design specifications
+ * Note: border-radius is handled by _dark.pcss via --tkn-radius-dialog
+ * ======================================================================== */
+
+.mx_Dialog {
+    box-shadow: var(--tkn-shadow-dialog, 0 8px 32px rgba(0, 0, 0, 0.50));
+    border: 1px solid var(--cpd-color-border-interactive-secondary, #374151);
+}
+
+/* ========================================================================
+ * Room List Filter Tabs Customization
+ * Based on UI design specifications - rectangular tabs with orange active state
+ * ======================================================================== */
+
+/* Override ChatFilter pill shape to rectangular */
+:global([class*="_chat-filter"]) {
+    border-radius: 6px !important;
+    padding: 6px 16px !important;
+    font-size: 13px !important;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: var(--cpd-color-bg-subtle-primary) !important;
+    }
+}
+
+/* Active filter tab - orange background */
+:global([class*="_chat-filter"][aria-selected="true"]) {
+    background: var(--cpd-color-bg-action-primary-rest, #FA7B22) !important;
+    border-color: var(--cpd-color-bg-action-primary-rest, #FA7B22) !important;
+    color: #FFFFFF !important;
+}
+
+/* ========================================================================
+ * Three-Column Layout Background Hierarchy
+ * Based on UI design mockup - creates visual separation between panels
+ * Page bg: dark gray | Room list: dark card | Main content: dark
+ * ======================================================================== */
+
+/* Overall page background - darker gray to create depth */
+.mx_MatrixChat {
+    background-color: #12141A !important;
+}
+
+/* Space panel - slightly different dark for visual distinction */
+.mx_SpacePanel.newUi {
+    background-color: #1A1D23 !important;
+    border-right: 1px solid #2D3139 !important;
+}
+
+/* ========================================================================
+ * Room List Panel Customization
+ * Dark card with rounded corners based on design mockup
+ * ======================================================================== */
+
+/* LeftPanel outer container - transparent to show page background */
+.mx_LeftPanel_newRoomList {
+    background-color: transparent !important;
+}
+
+/* Room list container - dark card */
+.mx_LeftPanel_newRoomList .mx_LeftPanel_roomListContainer {
+    background-color: var(--cpd-color-bg-canvas-default, #1A1D23) !important;
+    border-radius: 12px;
+    margin: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* RoomView main content area - card shadow */
+.mx_LeftPanel_panel .mx_RoomView_wrapper {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* RoomView border lines - lighter separator */
+.mx_MessageComposer_wrapper {
+    border-top-color: #4B5563 !important;
+}
+.mx_RoomView_auxPanel_hiddenHighlights {
+    border-bottom-color: #4B5563 !important;
+}
+.mx_RoomView_statusAreaBox_line {
+    border-top-color: #4B5563 !important;
+}
+.mx_ReplyPreview {
+    border-color: #4B5563 !important;
+}
+
+/* RoomView header bottom border - lighter */
+.mx_RoomHeader {
+    border-bottom-color: #5C6672 !important;
+}
+
+/* RightPanel left separator (vertical line) - lighter */
+.mx_RightPanel {
+    border-left-color: #5C6672 !important;
+}
+
+/* BaseCard header bottom border - lighter */
+.mx_BaseCard_header {
+    border-block-end-color: #5C6672 !important;
+}
+
+/* Remove message hover background */
+.mx_EventTile[data-layout="group"]:hover .mx_EventTile_line,
+.mx_EventTile[data-layout="irc"]:hover .mx_EventTile_line {
+    background-color: transparent !important;
+}
+.mx_EventTile[data-layout="bubble"]:hover::before {
+    background: transparent !important;
+}
+
+/* Bubble layout - others' message background */
+.mx_EventTile[data-layout="bubble"]:not([data-self="true"]) .mx_EventTile_line:not(.mx_EventTile_mediaLine) {
+    background: #252830 !important;
+}
+
+/* RoomListPanel component inside */
+.mx_RoomListPanel {
+    background-color: transparent !important;
+}
+
+/* Ensure room list wrapper also has proper background */
+.mx_LeftPanel_wrapper--user {
+    background-color: transparent !important;
+}
+
+/* ========================================================================
+ * Room List Header Customization
+ * ======================================================================== */
+
+.mx_LegacyRoomListHeader {
+    padding: 12px 16px;
+}
+
+.mx_LegacyRoomListHeader_contextMenuButton,
+.mx_LegacyRoomListHeader_contextLessTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-content, #F9FAFB);
+}
+
+/* ========================================================================
+ * Home Page Welcome Section Customization
+ * ======================================================================== */
+
+.mx_HomePage_default {
+    h1 {
+        font-size: 28px !important;
+        font-weight: 600 !important;
+        color: var(--primary-content, #F9FAFB);
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 16px !important;
+        color: var(--secondary-content, #9CA3AF);
+        margin-top: 8px;
+    }
+
+    .mx_MiniAvatarUploader {
+        margin-bottom: 24px;
+
+        .mx_BaseAvatar {
+            width: 80px !important;
+            height: 80px !important;
+            font-size: 32px !important;
+        }
+    }
+}
+
+/* ========================================================================
+ * Space Create Dialog Customization
+ * Smaller, more refined typography
+ * ======================================================================== */
+
+/* Dialog heading - reduce from 18px to 16px */
+.mx_SpaceCreateMenu_wrapper .mx_ContextualMenu > div > h2 {
+    font-size: 16px !important;
+}
+
+/* Dialog description - reduce from 15px to 13px */
+.mx_SpaceCreateMenu_wrapper .mx_ContextualMenu > div > p {
+    font-size: 13px !important;
+}
+
+/* Space pill button - reduce title from 17px to 15px */
+.mx_SpacePillButton {
+    font-size: 15px !important;
+}
+
+/* Space pill button description - reduce from 15px to 13px */
+.mx_SpacePillButton > div {
+    font-size: 13px !important;
+}

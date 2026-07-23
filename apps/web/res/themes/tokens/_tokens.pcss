@@ -1,0 +1,231 @@
+/*
+Copyright 2025 New Vector Ltd.
+
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+Please see LICENSE files in the repository root for full details.
+*/
+
+/**
+ * Unified Theme Token System
+ *
+ * This file defines all visual design tokens as CSS custom properties.
+ * Tokens are organized into categories and can be overridden via:
+ *   1. config.json -> setting_defaults -> custom_themes -> tokens
+ *   2. Direct CSS override in custom themes
+ *
+ * Token naming convention: --tkn-{category}-{name}
+ */
+
+@layer element-tokens {
+    :root,
+    [class*="cpd-theme-"] {
+        /* ========================================================================
+         * Color Tokens
+         * These override the hardcoded color values in the legacy theme system.
+         * ======================================================================== */
+
+        /* -- Menu -- */
+        --tkn-color-menu-border: #e7e7e7;
+        --tkn-color-menu-selected: #f5f8fa;
+        --tkn-color-menu-box-shadow: rgba(118, 131, 156, 0.6);
+
+        /* -- Text -- */
+        --tkn-color-muted-fg: #61708b;
+        --tkn-color-light-fg: #747474;
+        --tkn-color-topleftmenu: #212121;
+        --tkn-color-roomtopic: #9e9e9e;
+        --tkn-color-h3: #3d3b39;
+        --tkn-color-settings-grey-fg: #a2a2a2;
+        --tkn-color-info-plinth-bg: #f7f7f7;
+        --tkn-color-neutral-badge: #dbdbdb;
+        --tkn-color-accent-fg: #f4f6fa;
+
+        /* -- Room Header -- */
+        --tkn-color-roomheader-addroom-bg: rgba(92, 100, 112, 0.2);
+        --tkn-color-roomheader-addroom-fg: #5c6470;
+        --tkn-color-header-panel-text-primary: #91a1c0;
+
+        /* -- Room List -- */
+        --tkn-color-roomlist-bg: rgba(245, 245, 245, 0.9);
+        --tkn-color-spacepanel-bg: rgba(232, 232, 232, 0.77);
+        --tkn-color-panel-gradient-start: rgba(242, 245, 248, 0);
+        --tkn-color-panel-gradient-end: rgba(242, 245, 248, 1);
+        --tkn-color-secondary-accent: #f2f5f8;
+        --tkn-color-breadcrumb-placeholder: #e8eef5;
+
+        /* -- Rich Text Editor -- */
+        --tkn-color-rte-bg: #e9e9e9;
+        --tkn-color-rte-code-bg: rgba(0, 0, 0, 0.04);
+
+        /* -- Inputs -- */
+        --tkn-color-input-darker-fg: #9fa9ba;
+        --tkn-color-input-underline: rgba(151, 151, 151, 0.5);
+        --tkn-color-input-fg: rgba(74, 74, 74, 0.9);
+
+        /* -- Dialog -- */
+        --tkn-color-dialog-backdrop: #030c1b4d;
+
+        /* -- Message Action Bar -- */
+        --tkn-color-message-action-bar-border: #e9edf1;
+
+        /* -- Reaction Row -- */
+        --tkn-color-reaction-row-selected-bg: #e9fff9;
+
+        /* -- Buttons -- */
+        --tkn-color-button-danger-disabled-bg: #f5b6bb;
+
+        /* -- Toggle Switch -- */
+        --tkn-color-togglesw-off: #c1c9d6;
+
+        /* -- Presence -- */
+        --tkn-color-presence-away: #d9b072;
+        --tkn-color-presence-offline: #e3e8f0;
+
+        /* -- Voice Messages -- */
+        --tkn-color-voice-record-stop: #ff5b55;
+        --tkn-color-voice-record-live: #ff5b55;
+
+        /* -- Auth Page -- */
+        --tkn-color-authpage-bg: #2e3649;
+        --tkn-color-authpage-modal-content-blur: rgb(255, 255, 255, 0.59);
+
+        /* -- Image Body -- */
+        --tkn-color-imagebody-giflabel: rgba(0, 0, 0, 0.7);
+        --tkn-color-imagebody-giflabel-border: rgba(0, 0, 0, 0.2);
+
+        /* -- Visual Bell -- */
+        --tkn-color-visual-bell: #faa;
+
+        /* -- One-off -- */
+        --tkn-color-primary-hairline: transparent;
+
+        /* -- Composer -- */
+        --tkn-color-composer-shadow: rgba(0, 0, 0, 0.04);
+
+        /* -- Scrollbar -- */
+        --tkn-color-scrollbar-thumb: rgba(0, 0, 0, 0.2);
+
+        /* -- Event Highlight -- */
+        --tkn-color-event-highlight: #25271f;
+
+        /* -- Settings -- */
+        --tkn-color-settings-profile-button-bg: #e7e7e7;
+
+        /* -- Inputs -- */
+        --tkn-color-input-border: rgba(231, 231, 231, 0.2);
+        --tkn-color-input-darker-bg: #181b21;
+        --tkn-color-input-lighter-bg: #f2f5f8;
+
+        /* -- Call / VoIP -- */
+        --tkn-color-call-light-quaternary: #c1c6cd;
+
+        /* -- Location Sharing -- */
+        --tkn-color-location-live: #5c56f5;
+        --tkn-color-location-live-secondary: #deddfd;
+
+        /* -- Code Block -- */
+        --tkn-color-codeblock-bg: #2a3039;
+
+        /* -- Diff Highlight -- */
+        --tkn-color-diff-addition: #1a4b59;
+        --tkn-color-diff-deletion: #53232a;
+
+        /* -- Table -- */
+        --tkn-color-dark-table-alt: #080808;
+
+        /* ========================================================================
+         * Border Radius Tokens
+         * ======================================================================== */
+        --tkn-radius-sm: 4px;
+        --tkn-radius-md: 8px;
+        --tkn-radius-lg: 12px;
+        --tkn-radius-xl: 16px;
+        --tkn-radius-2xl: 24px;
+        --tkn-radius-round: 9999px;
+        --tkn-radius-input: 6px;
+        --tkn-radius-button: 8px;
+        --tkn-radius-card: 12px;
+        --tkn-radius-dialog: 8px;
+        --tkn-radius-menu: 8px;
+        --tkn-radius-badge: 12px;
+        --tkn-radius-avatar: 50%;
+
+        /* ========================================================================
+         * Shadow Tokens
+         * ======================================================================== */
+        --tkn-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+        --tkn-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+        --tkn-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+        --tkn-shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.15);
+        --tkn-shadow-menu: 0 2px 8px rgba(0, 0, 0, 0.15);
+        --tkn-shadow-dialog: 0 8px 32px rgba(0, 0, 0, 0.2);
+        --tkn-shadow-composer: 0 -2px 6px rgba(0, 0, 0, 0.04);
+        --tkn-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+        /* ========================================================================
+         * Border Tokens
+         * ======================================================================== */
+        --tkn-border-width: 1px;
+        --tkn-border-width-sm: 1px;
+        --tkn-border-width-md: 2px;
+        --tkn-border-width-lg: 3px;
+        --tkn-border-width-focus: 2px;
+        --tkn-border-style: solid;
+
+        /* ========================================================================
+         * Spacing Tokens
+         * ======================================================================== */
+        --tkn-space-2xs: 2px;
+        --tkn-space-xs: 4px;
+        --tkn-space-sm: 8px;
+        --tkn-space-md: 16px;
+        --tkn-space-lg: 24px;
+        --tkn-space-xl: 32px;
+        --tkn-space-2xl: 48px;
+        --tkn-space-3xl: 64px;
+
+        /* ========================================================================
+         * Typography Tokens
+         * ======================================================================== */
+        --tkn-font-size-xs: 12px;
+        --tkn-font-size-sm: 13px;
+        --tkn-font-size-md: 14px;
+        --tkn-font-size-lg: 16px;
+        --tkn-font-size-xl: 18px;
+        --tkn-font-size-2xl: 20px;
+        --tkn-font-size-3xl: 24px;
+        --tkn-font-size-4xl: 28px;
+        --tkn-font-weight-normal: 400;
+        --tkn-font-weight-medium: 500;
+        --tkn-font-weight-semibold: 600;
+        --tkn-font-weight-bold: 700;
+        --tkn-line-height-tight: 1.2;
+        --tkn-line-height-normal: 1.5;
+        --tkn-line-height-relaxed: 1.75;
+
+        /* ========================================================================
+         * Animation / Transition Tokens
+         * ======================================================================== */
+        --tkn-duration-instant: 0ms;
+        --tkn-duration-fast: 100ms;
+        --tkn-duration-normal: 200ms;
+        --tkn-duration-slow: 400ms;
+        --tkn-duration-slower: 600ms;
+        --tkn-easing-default: ease;
+        --tkn-easing-in: ease-in;
+        --tkn-easing-out: ease-out;
+        --tkn-easing-in-out: ease-in-out;
+        --tkn-easing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+        --tkn-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+
+        /* ========================================================================
+         * Opacity Tokens
+         * ======================================================================== */
+        --tkn-opacity-disabled: 0.4;
+        --tkn-opacity-hover: 0.8;
+        --tkn-opacity-active: 0.9;
+        --tkn-opacity-subtle: 0.6;
+        --tkn-opacity-invisible: 0;
+        --tkn-opacity-visible: 1;
+    }
+}

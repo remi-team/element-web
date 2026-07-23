@@ -1,4 +1,40 @@
 /* Colors from Figma Compound https://www.figma.com/file/X4XTH9iS2KGJ2wFKDqkyed/Compound?node-id=559%3A741 */
+
+/* Dark theme overrides for the unified token system */
+:root {
+    --tkn-color-menu-border: #000000;
+    --tkn-color-roomlist-bg: rgba(38, 40, 45, 0.9);
+    --tkn-color-spacepanel-bg: rgba(38, 39, 43, 0.82);
+    --tkn-color-panel-gradient-start: rgba(34, 38, 46, 0);
+    --tkn-color-panel-gradient-end: rgba(34, 38, 46, 1);
+    --tkn-color-event-highlight: #25271f;
+    --tkn-color-dialog-backdrop: #00000080;
+    --tkn-color-message-action-bar-border: #616b7f;
+    --tkn-color-reaction-row-selected-bg: #1f6954;
+    --tkn-color-composer-shadow: rgba(0, 0, 0, 0.28);
+    --tkn-color-breadcrumb-placeholder: #272c35;
+    --tkn-color-scrollbar-thumb: rgba(255, 255, 255, 0.2);
+    --tkn-color-codeblock-bg: #2a3039;
+    --tkn-color-visual-bell: #800;
+    --tkn-color-authpage-modal-content-blur: rgb(0, 0, 0, 0.59);
+    --tkn-color-input-border: rgba(231, 231, 231, 0.2);
+    --tkn-color-input-darker-bg: #181b21;
+    --tkn-color-input-lighter-bg: #f2f5f8;
+    --tkn-color-roomheader-addroom-bg: rgba(92, 100, 112, 0.3);
+    --tkn-color-settings-profile-button-bg: #e7e7e7;
+    --tkn-color-call-light-quaternary: #c1c6cd;
+    --tkn-color-location-live: #5c56f5;
+    --tkn-color-location-live-secondary: #deddfd;
+    --tkn-color-diff-addition: #1a4b59;
+    --tkn-color-diff-deletion: #53232a;
+    --tkn-color-dark-table-alt: #080808;
+    --tkn-color-roomsublist-skeleton-start: #3e444c;
+    --tkn-color-roomsublist-skeleton-end: #3e444c00;
+    --tkn-color-header-panel-text-secondary: #c8c8cd;
+    --tkn-color-room-highlight: #343a46;
+    --tkn-color-text-secondary: #b9bec6;
+}
+
 /* ******************** */
 $primary-content: var(--cpd-color-text-primary);
 $secondary-content: var(--cpd-color-text-secondary);
@@ -20,7 +56,7 @@ $separator: var(--cpd-color-gray-400);
 
 /* RoomList */
 /* ******************** */
-$roomlist-bg-color: rgba(38, 40, 45, 0.9);
+$roomlist-bg-color: var(--tkn-color-roomlist-bg);
 $roomsublist-skeleton-ui-bg: linear-gradient(180deg, $background 0%, #ffffff00 100%);
 $roomtile-default-badge-bg-color: var(--cpd-color-icon-secondary);
 /* ******************** */
@@ -64,9 +100,9 @@ $icon-button-color: var(--cpd-color-icon-tertiary);
 
 /* Colors that aren't in Figma and are theme specific - we need to get rid of these */
 /* ******************** */
-$header-panel-text-secondary-color: #c8c8cd;
-$room-highlight-color: #343a46;
-$text-secondary-color: #b9bec6;
+$header-panel-text-secondary-color: var(--tkn-color-header-panel-text-secondary);
+$room-highlight-color: var(--tkn-color-room-highlight);
+$text-secondary-color: var(--tkn-color-text-secondary);
 /* ******************** */
 
 /* Colors that aren't in Figma - we need to get rid of these */
@@ -79,10 +115,10 @@ $info-plinth-bg-color: $header-panel-bg-color;
 $event-selected-color: var(--cpd-color-bg-subtle-secondary);
 $topleftmenu-color: $primary-content;
 $roomtopic-color: $text-secondary-color;
-$spacePanel-bg-color: rgba(38, 39, 43, 0.82);
-$panel-gradient: rgba(34, 38, 46, 0), rgba(34, 38, 46, 1);
+$spacePanel-bg-color: var(--tkn-color-spacepanel-bg);
+$panel-gradient: var(--tkn-color-panel-gradient-start), var(--tkn-color-panel-gradient-end);
 $h3-color: $primary-content;
-$event-highlight-bg-color: #25271f;
+$event-highlight-bg-color: var(--tkn-color-event-highlight);
 $header-panel-text-primary-color: $text-secondary-color;
 /* ******************** */
 
@@ -100,7 +136,7 @@ $widget-body-bg-color: $panel-actions;
 
 /* Menu */
 /* ******************** */
-$menu-border-color: #000000;
+$menu-border-color: var(--tkn-color-menu-border);
 $menu-bg-color: $header-panel-bg-color;
 $menu-box-shadow-color: $background;
 $menu-selected-color: $room-highlight-color;
@@ -108,7 +144,7 @@ $menu-selected-color: $room-highlight-color;
 
 /* Settings */
 /* ******************** */
-$settings-profile-button-bg-color: #e7e7e7;
+$settings-profile-button-bg-color: var(--tkn-color-settings-profile-button-bg);
 $settings-subsection-fg-color: $text-secondary-color;
 /* ******************** */
 
@@ -119,7 +155,7 @@ $room-icon-unread-color: var(--cpd-color-icon-tertiary);
 
 /* RoomHeader */
 /* ******************** */
-$roomheader-addroom-bg-color: rgba(92, 100, 112, 0.3);
+$roomheader-addroom-bg-color: var(--tkn-color-roomheader-addroom-bg);
 $roomheader-addroom-fg-color: $primary-content;
 /* ******************** */
 
@@ -132,17 +168,17 @@ $pill-press-bg-color: var(--cpd-color-bg-action-primary-pressed);
 
 /* Inputs */
 /* ******************** */
-$input-border-color: rgba(231, 231, 231, 0.2);
-$input-darker-bg-color: #181b21;
-$input-darker-fg-color: #61708b;
-$input-lighter-bg-color: #f2f5f8;
+$input-border-color: var(--tkn-color-input-border);
+$input-darker-bg-color: var(--tkn-color-input-darker-bg);
+$input-darker-fg-color: var(--tkn-color-input-darker-fg);
+$input-lighter-bg-color: var(--tkn-color-input-lighter-bg);
 $input-placeholder: var(--cpd-color-text-secondary);
 /* ******************** */
 
 /* Dialog */
 /* ******************** */
 $dialog-title-fg-color: $primary-content;
-$dialog-backdrop-color: #00000080;
+$dialog-backdrop-color: var(--tkn-color-dialog-backdrop);
 $dialog-close-fg-color: $icon-button-color;
 $dialog-close-external-color: $primary-content;
 /* ******************** */
@@ -150,7 +186,7 @@ $dialog-close-external-color: $primary-content;
 /* RoomList */
 /* ******************** */
 $system: var(--cpd-color-bg-subtle-secondary);
-$roomsublist-skeleton-ui-bg: linear-gradient(180deg, #3e444c 0%, #3e444c00 100%);
+$roomsublist-skeleton-ui-bg: linear-gradient(180deg, var(--tkn-color-roomsublist-skeleton-start) 0%, var(--tkn-color-roomsublist-skeleton-end) 100%);
 $roomtile-default-badge-bg-color: var(--cpd-color-icon-secondary);
 /* ******************** */
 
@@ -177,21 +213,21 @@ $togglesw-off-color: $room-highlight-color;
 /* ******************** */
 $authpage-primary-color: $primary-content;
 /* background colour of the modal, when the background is blurred */
-$authpage-modal-content-with-blur-bg-color: rgb(0, 0, 0, 0.59);
+$authpage-modal-content-with-blur-bg-color: var(--tkn-color-authpage-modal-content-blur);
 /* ******************** */
 
 /* Message action bar */
 /* ******************** */
 $message-action-bar-bg-color: $header-panel-bg-color;
 $message-action-bar-fg-color: $header-panel-text-primary-color;
-$message-action-bar-border-color: #616b7f;
+$message-action-bar-border-color: var(--tkn-color-message-action-bar-border);
 $message-action-bar-hover-border-color: $header-panel-text-primary-color;
 /* ******************** */
 
 /* Reaction row */
 /* ******************** */
 $reaction-row-button-hover-border-color: $header-panel-text-primary-color;
-$reaction-row-button-selected-bg-color: #1f6954;
+$reaction-row-button-selected-bg-color: var(--tkn-color-reaction-row-selected-bg);
 /* ******************** */
 
 /* Voice messages */
@@ -226,13 +262,13 @@ $video-feed-secondary-background: $system;
 $call-system: $system;
 $call-background: $background;
 $call-primary-content: $primary-content;
-$call-light-quaternary-content: #c1c6cd;
+$call-light-quaternary-content: var(--tkn-color-call-light-quaternary);
 /* ******************** */
 
 /* Location sharing */
 /* ******************** */
-$location-live-color: #5c56f5;
-$location-live-secondary-color: #deddfd;
+$location-live-color: var(--tkn-color-location-live);
+$location-live-secondary-color: var(--tkn-color-location-live-secondary);
 /* ******************** */
 
 /* Location sharing */
@@ -246,15 +282,15 @@ $location-live-secondary-color: #deddfd;
 /* ******************** */
 $progressbar-bg-color: var(--cpd-color-gray-200);
 $kbd-border-color: $strong-input-border-color;
-$visual-bell-bg-color: #800;
+$visual-bell-bg-color: var(--tkn-color-visual-bell);
 $event-timestamp-color: var(--cpd-color-text-secondary);
-$composer-shadow-color: rgba(0, 0, 0, 0.28);
-$breadcrumb-placeholder-bg-color: #272c35;
+$composer-shadow-color: var(--tkn-color-composer-shadow);
+$breadcrumb-placeholder-bg-color: var(--tkn-color-breadcrumb-placeholder);
 $resend-button-divider-color: var(--cpd-color-gray-700);
 $inlinecode-border-color: $quinary-content;
 $inlinecode-background-color: $system;
-$codeblock-background-color: #2a3039;
-$scrollbar-thumb-color: rgba(255, 255, 255, 0.2);
+$codeblock-background-color: var(--tkn-color-codeblock-bg);
+$scrollbar-thumb-color: var(--tkn-color-scrollbar-thumb);
 $selected-color: $room-highlight-color;
 /* ******************** */
 
@@ -287,7 +323,7 @@ body {
         }
 
         tr:nth-child(2n) {
-            background-color: #080808;
+            background-color: var(--tkn-color-dark-table-alt);
         }
     }
 }
@@ -300,13 +336,18 @@ body {
 }
 
 .hljs-addition {
-    background: #1a4b59;
+    background: var(--tkn-color-diff-addition);
 }
 
 .hljs-deletion {
-    background: #53232a;
+    background: var(--tkn-color-diff-deletion);
 }
 /* ******************** */
+
+/* Dialog border-radius from token system */
+.mx_Dialog {
+    border-radius: var(--tkn-radius-dialog, 8px);
+}
 
 /* Splash Page Gradient */
 .mx_SplashPage::before {

@@ -45,9 +45,30 @@ interface CompoundTheme {
     [token: string]: string;
 }
 
+/**
+ * Unified theme token configuration.
+ * Each key maps to a category of CSS custom properties prefixed with `--tkn-{category}-`.
+ */
+export type ThemeTokens = {
+    color?: Record<string, string>;
+    radius?: Record<string, string>;
+    shadow?: Record<string, string>;
+    border?: Record<string, string>;
+    space?: Record<string, string>;
+    typography?: Record<string, string>;
+    animation?: Record<string, string>;
+    opacity?: Record<string, string>;
+};
+
 export type CustomTheme = {
     name: string;
     is_dark?: boolean; // eslint-disable-line camelcase
+    /**
+     * Name of the paired theme for automatic light/dark switching.
+     * When set, the system will automatically switch between this theme
+     * and its pair when the OS color scheme changes.
+     */
+    pair?: string;
     colors?: {
         [key: string]: string;
     };
@@ -57,6 +78,12 @@ export type CustomTheme = {
         monospace: string;
     };
     compound?: CompoundTheme;
+    /**
+     * Unified theme token overrides.
+     * These override the `--tkn-*` CSS custom properties defined in the theme.
+     * Each category maps to tokens prefixed with `--tkn-{category}-{name}`.
+     */
+    tokens?: ThemeTokens;
 };
 
 /**
@@ -86,11 +113,51 @@ export function isHighContrastTheme(theme: string): boolean {
     return Object.values(HIGH_CONTRAST_THEMES).includes(theme);
 }
 
+/**
+ * Find the paired theme for automatic light/dark switching.
+ * Returns the paired theme name if one exists, or undefined.
+ */
+export function findPairedTheme(themeName: string): string | undefined {
+    const customThemes = SettingsStore.getValue("custom_themes") || [];
+    const theme = customThemes.find((t: CustomTheme) => t.name === themeName);
+    return theme?.pair;
+}
+
+/**
+ * Resolve a custom theme to its appropriate variant based on system dark mode preference.
+ * If the theme has a pair configured, returns the paired theme name when dark mode is preferred.
+ * Otherwise returns the original theme name.
+ */
+export function resolveThemeVariant(themeName: string, preferDark: boolean): string {
+    if (!themeName.startsWith("custom-")) return themeName;
+
+    const baseName = themeName.slice(7);
+    const customThemes = SettingsStore.getValue("custom_themes") || [];
+    const theme = customThemes.find((t: CustomTheme) => t.name === baseName);
+
+    if (!theme?.pair) return themeName;
+
+    // If the current theme is the dark variant and system prefers light, switch to base
+    // If the current theme is the base (light) and system prefers dark, switch to pair
+    if (preferDark && !theme.is_dark) {
+        return `custom-${theme.pair}`;
+    }
+    if (!preferDark && theme.is_dark) {
+        // Find the pair of the dark theme (should be the light variant)
+        const pairTheme = customThemes.find((t: CustomTheme) => t.name === theme.pair);
+        if (pairTheme) {
+            return `custom-${pairTheme.name}`;
+        }
+    }
+
+    return themeName;
+}
+
 export function enumerateThemes(): { [key: string]: string } {
     const BUILTIN_THEMES = {
-        "light": _t("common|light"),
-        "light-high-contrast": _t("theme|light_high_contrast"),
-        "dark": _t("common|dark"),
+        // "light": _t("common|light"),
+        // "light-high-contrast": _t("theme|light_high_contrast"),
+        // "dark": _t("common|dark"),
     };
     const customThemes = SettingsStore.getValue("custom_themes") || [];
     const customThemeNames: Record<string, string> = {};
@@ -143,6 +210,7 @@ function clearCustomTheme(): void {
     // remove the custom style sheets
     document.querySelector("head > style[title='custom-theme-font-faces']")?.remove();
     document.querySelector("head > style[title='custom-theme-compound']")?.remove();
+    document.querySelector("head > style[title='custom-theme-tokens']")?.remove();
 }
 
 const allowedFontFaceProps = [
@@ -211,6 +279,28 @@ function generateCustomCompoundCSS(theme: CompoundTheme): string {
     // layer so custom themes win over the imported default tokens by source
     // order without creating a lower-priority nested layer.
     return `@layer compound-tokens { :root, [class*="cpd-theme-"] { ${properties.join(" ")} } }`;
+}
+
+function generateCustomTokensCSS(tokens: ThemeTokens): string {
+    const properties: string[] = [];
+    const categoryMap: Record<keyof ThemeTokens, string> = {
+        color: "color",
+        radius: "radius",
+        shadow: "shadow",
+        border: "border",
+        space: "space",
+        typography: "typography",
+        animation: "animation",
+        opacity: "opacity",
+    };
+    for (const [category, values] of Object.entries(tokens)) {
+        const prefix = categoryMap[category as keyof ThemeTokens];
+        if (!prefix || !values) continue;
+        for (const [name, value] of Object.entries(values)) {
+            properties.push(`--tkn-${prefix}-${name}: ${value};`);
+        }
+    }
+    return `@layer element-tokens { :root, [class*="cpd-theme-"] { ${properties.join(" ")} } }`;
 }
 
 /**
@@ -291,6 +381,14 @@ function setCustomThemeVars(customTheme: CustomTheme): void {
         const css = generateCustomCompoundCSS(customTheme.compound);
         const style = document.createElement("style");
         style.setAttribute("title", "custom-theme-compound");
+        style.setAttribute("type", "text/css");
+        style.appendChild(document.createTextNode(css));
+        document.head.appendChild(style);
+    }
+    if (customTheme.tokens) {
+        const css = generateCustomTokensCSS(customTheme.tokens);
+        const style = document.createElement("style");
+        style.setAttribute("title", "custom-theme-tokens");
         style.setAttribute("type", "text/css");
         style.appendChild(document.createTextNode(css));
         document.head.appendChild(style);

@@ -1,0 +1,65 @@
+{
+  "run": {
+    "command": "nx build",
+    "startTime": "2026-07-23T02:48:43.947Z",
+    "endTime": "2026-07-23T02:49:29.913Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "element-web:prebuild:module_system",
+      "target": "prebuild:module_system",
+      "projectName": "element-web",
+      "hash": "17590443680779993514",
+      "startTime": "2026-07-23T02:48:43.984Z",
+      "endTime": "2026-07-23T02:48:44.206Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "element-web:prebuild:rethemendex",
+      "target": "prebuild:rethemendex",
+      "projectName": "element-web",
+      "hash": "12688127649103026541",
+      "startTime": "2026-07-23T02:48:43.984Z",
+      "endTime": "2026-07-23T02:48:44.757Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@element-hq/element-web-module-api:build",
+      "target": "build",
+      "projectName": "@element-hq/element-web-module-api",
+      "hash": "3744102391768966484",
+      "startTime": "2026-07-23T02:48:43.984Z",
+      "endTime": "2026-07-23T02:48:47.907Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@element-hq/web-shared-components:build",
+      "target": "build",
+      "projectName": "@element-hq/web-shared-components",
+      "hash": "7455699793481739848",
+      "startTime": "2026-07-23T02:48:47.920Z",
+      "endTime": "2026-07-23T02:48:55.122Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "element-web:build",
+      "target": "build",
+      "projectName": "element-web",
+      "hash": "10569475176667505031",
+      "startTime": "2026-07-23T02:48:55.129Z",
+      "endTime": "2026-07-23T02:49:29.878Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

@@ -26,8 +26,16 @@ export abstract class ReadyWatchingStore extends EventEmitter implements IDestro
     public async start(): Promise<void> {
         this.dispatcherRef = this.dispatcher.register(this.onAction);
 
-        // MatrixClientPeg can be undefined in tests because of circular dependencies with other stores
-        const matrixClient = MatrixClientPeg?.get();
+        // MatrixClientPeg can be undefined in tests because of circular dependencies with other stores.
+        // In production builds, circular module evaluation may cause a TDZ error
+        // ("Cannot access before initialization") when MatrixClientPeg hasn't been defined yet.
+        let matrixClient: MatrixClient | null | undefined;
+        try {
+            matrixClient = MatrixClientPeg?.get();
+        } catch {
+            // MatrixClientPeg not yet initialized due to circular module evaluation;
+            // the store will be set up later when MatrixActions.sync is dispatched.
+        }
         if (matrixClient) {
             this.matrixClient = matrixClient;
             await this.onReady();
