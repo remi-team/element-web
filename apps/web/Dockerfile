@@ -41,9 +41,9 @@ RUN chmod +x scripts/*.sh
 RUN VERSION=${VERSION} pnpm --dir apps/web build
 
 ############################################################
-# 默认配置
+# 默认配置（使用项目定制配置，而非 sample）
 ############################################################
-RUN cp apps/web/config.sample.json apps/web/webapp/config.json
+RUN cp apps/web/config.json apps/web/webapp/config.json
 
 ############################################################
 # Runtime
