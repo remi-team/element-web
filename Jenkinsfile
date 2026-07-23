@@ -51,7 +51,7 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: "refs/heads/${params.BRANCH_NAME}"]],
                     userRemoteConfigs: [[
-                        url: 'git@github.com:remi-team/www.remitech.ai.git',
+                        url: 'git@github.com:remi-team/element-web.git',
                         credentialsId: 'ssh-key-git'
                     ]],
                     extensions: [
