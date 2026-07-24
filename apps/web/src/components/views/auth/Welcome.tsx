@@ -45,7 +45,14 @@ export default class Welcome extends React.PureComponent<Props> {
 
         return (
             <AuthPage addBlur={false}>
-                <Glass>
+                <Glass style={{
+                    padding:0,
+                    outline: "none",
+                    outlineOffset: "none",
+                    background: "none",
+                    backdropFilter: "none",
+                    borderRadius: 0,
+                }}>
                     <div
                         className={classNames("mx_Welcome", {
                             mx_WelcomePage_registrationDisabled: !SettingsStore.getValue(UIFeature.Registration),

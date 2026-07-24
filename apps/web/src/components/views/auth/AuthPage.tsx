@@ -51,6 +51,7 @@ export default class AuthPage extends React.PureComponent<React.PropsWithChildre
         const modalStyle: React.CSSProperties = {
             position: "relative",
             background: "initial",
+            marginTop: "150px",
         };
 
         const blurStyle: React.CSSProperties = {
@@ -67,6 +68,7 @@ export default class AuthPage extends React.PureComponent<React.PropsWithChildre
             display: "flex",
             zIndex: 1,
             borderRadius: "inherit",
+            
         };
 
         let modalBlur;
